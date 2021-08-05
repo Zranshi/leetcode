@@ -41,3 +41,7 @@ func (s *SortedStack) Peek() int {
 func (s *SortedStack) IsEmpty() bool {
 	return len(s.St) == 0
 }
+
+func main() {
+
+}

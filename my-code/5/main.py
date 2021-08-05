@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 5. 最长回文子串.py
 
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         n = len(s)
@@ -29,7 +30,6 @@ class Solution:
                     max_len = j - i + 1
                     begin = i
         return s[begin:begin + max_len]
-
 
 
 if __name__ == '__main__':

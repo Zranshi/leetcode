@@ -29,10 +29,7 @@ func findWhetherExistsPath(n int, graph [][]int, start int, target int) bool {
 		}
 		queue = queue[1:]
 	}
-	if len(queue) != 0 {
-		return true
-	}
-	return false
+	return len(queue) != 0
 }
 
 func main() {

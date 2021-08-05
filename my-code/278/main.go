@@ -26,3 +26,7 @@ func firstBadVersion(n int) int {
 		return l + 1
 	}
 }
+
+func main() {
+
+}
