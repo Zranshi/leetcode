@@ -10,8 +10,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        nums[:] = nums.count(0) * [0] + nums.count(1) * \
-                  [1] + nums.count(2) * [2]
+        nums[:] = nums.count(0) * [0] + nums.count(1) * [1] + nums.count(2) * [2]
 
 
 if __name__ == "__main__":
