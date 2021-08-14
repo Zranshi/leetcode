@@ -1,5 +1,9 @@
 package main
 
+// @Time     : 2021/08/12 16:22
+// @Author   : Ranshi
+// @File     : main.go
+
 func check(a []int, b []int) bool {
 	for i := range a {
 		if a[i] != b[i] {
@@ -30,4 +34,8 @@ func checkInclusion(s1 string, s2 string) bool {
 		index[s2[idx]-'a'] -= 1
 	}
 	return false
+}
+
+func main() {
+
 }

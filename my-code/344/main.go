@@ -5,11 +5,10 @@ package main
 // @File     : 344. 反转字符串.go
 
 func reverseString(s []byte) {
-	idx := 0
-	reIdx := len(s) - 1
-	for idx < reIdx {
-		s[idx], s[reIdx] = s[reIdx], s[idx]
-		idx++
-		reIdx--
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
 	}
+}
+
+func main() {
 }
