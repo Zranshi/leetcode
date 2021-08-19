@@ -9,7 +9,7 @@ func reverseVowels(s string) string {
 		'a': true, 'o': true, 'e': true, 'i': true, 'u': true, 'A': true, 'O': true, 'E': true, 'I': true, 'U': true,
 	}
 	b := []byte(s)
-	for l, r := 0, len(b)-1; l < r; {
+	for l, r := 0, len(b)-1; l < r; l, r = l+1, r-1 {
 		for _, ok := oriCheck[b[r]]; l < r && !ok; ok = oriCheck[b[r]] {
 			r--
 		}
@@ -17,8 +17,10 @@ func reverseVowels(s string) string {
 			l++
 		}
 		b[l], b[r] = b[r], b[l]
-		l++
-		r--
 	}
 	return string(b)
+}
+
+func main() {
+
 }

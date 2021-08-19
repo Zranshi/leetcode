@@ -2,19 +2,17 @@
 // @Author   : Ranshi
 // @File     : 9. 回文数.js
 
-/**
- * @param {number} x
- * @return {boolean}
- */
 const isPalindrome = function (x) {
-    let ch = String(x)
-    for (let i = 0, j = ch.length - 1; i <= j; i++, j--) {
-        if (ch[i] !== ch[j]) {
-            return false
-        }
-    }
-    return true
-};
+  if (x < 0 || (x % 10 == 0 && x != 0)) {
+    return false
+  }
+  let idx = 0
+  while (x > idx) {
+    idx = idx * 10 + x % 10
+    x = Math.floor(x / 10)
+  }
+  return x === idx || x == Math.floor(idx / 10)
+}
 
 
-console.log(isPalindrome(x = 121));
+console.log(isPalindrome(x = 121))

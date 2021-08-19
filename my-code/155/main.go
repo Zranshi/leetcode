@@ -1,34 +1,45 @@
 package main
 
+import "math"
+
 type MinStack struct {
 	stack    []int
 	minStack []int
-	length   int
 }
 
-func MinInt(x, y int) int {
+func Constructor() MinStack {
+	return MinStack{
+		stack:    []int{},
+		minStack: []int{math.MaxInt64},
+	}
+}
+
+func (m *MinStack) Push(x int) {
+	m.stack = append(m.stack, x)
+	top := m.minStack[len(m.minStack)-1]
+	m.minStack = append(m.minStack, min(x, top))
+}
+
+func (m *MinStack) Pop() {
+	m.stack = m.stack[:len(m.stack)-1]
+	m.minStack = m.minStack[:len(m.minStack)-1]
+}
+
+func (m *MinStack) Top() int {
+	return m.stack[len(m.stack)-1]
+}
+
+func (m *MinStack) GetMin() int {
+	return m.minStack[len(m.minStack)-1]
+}
+
+func min(x, y int) int {
 	if x < y {
 		return x
 	}
 	return y
 }
 
-func (s *MinStack) Push(val int) {
-	s.stack = append(s.stack, val)
-	top := s.GetMin()
-	s.minStack = append(s.minStack, MinInt(val, top))
-}
+func main() {
 
-func (s *MinStack) Pop() {
-	s.minStack = s.minStack[:len(s.minStack)-1]
-	s.stack = s.stack[:len(s.stack)-1]
-	s.length--
-}
-
-func (s *MinStack) Top() int {
-	return s.stack[len(s.stack)-1]
-}
-
-func (s *MinStack) GetMin() int {
-	return s.minStack[len(s.minStack)-1]
 }
