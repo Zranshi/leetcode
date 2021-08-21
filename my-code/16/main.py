@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
         res, diff = float('inf'), float('inf')
