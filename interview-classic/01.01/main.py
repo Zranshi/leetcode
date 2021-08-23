@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 面试题 01.01. 判定字符是否唯一.py
 class Solution:
+
     def isUnique(self, astr: str) -> bool:
         bit_flag = 0
         for ch in astr:

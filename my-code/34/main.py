@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         low, high, mid = 0, len(nums) - 1, 0
         while low <= high:

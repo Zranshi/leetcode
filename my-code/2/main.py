@@ -3,17 +3,20 @@
 # @Author   : Ranshi
 # @File     : main.py
 
+from typing import Optional
+
 
 class ListNode:
 
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next: 'ListNode' = None):
         self.val = val
         self.next = next
 
 
 class Solution:
 
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def addTwoNumbers(self, l1: Optional[ListNode],
+                      l2: Optional[ListNode]) -> ListNode:
         s1 = ''
         while l1 is not None:
             s1 = s1 + str(l1.val)

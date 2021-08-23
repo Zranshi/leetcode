@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 168. Excel表列名称.py
 class Solution:
+
     def convertToTitle(self, num: int) -> str:
         res = []
         while num:
@@ -13,5 +14,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
-    print(s.convertToTitle(700))
+    print(Solution().convertToTitle(700))

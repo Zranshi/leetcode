@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 面试题 01.09. 字符串轮转.py
 class Solution:
+
     def isFlipedString(self, s1: str, s2: str) -> bool:
         if len(s1) != len(s2):
             return False

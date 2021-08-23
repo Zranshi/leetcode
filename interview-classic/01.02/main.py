@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 面试题 01.02. 判定是否互为字符重排.py
 class Solution:
+
     def CheckPermutation(self, s1: str, s2: str) -> bool:
         if len(s1) != len(s2):
             return False

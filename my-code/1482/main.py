@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# @Time     : 2021/05/28 18: 21
+# @Time     : 2021/05/28 18:21
 # @Author   : Ranshi
 # @File     : 1482. 制作 m 束花所需的最少天数.py
 from typing import List
