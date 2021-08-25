@@ -6,13 +6,14 @@ from typing import List
 
 
 class Solution:
+
     def maxSubArray(self, nums: List[int]) -> int:
         res, ans = -float('inf'), 0
         for x in nums:
             ans += x
-            res = ans if res < ans else res
-            ans = 0 if ans < 0 else ans
-        return res
+            res = max(ans, res)
+            ans = max(ans, 0)
+        return int(res)
 
 
 if __name__ == '__main__':
