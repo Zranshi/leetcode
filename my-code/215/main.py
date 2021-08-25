@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def findKthLargest_1(self, nums: List[int], k: int) -> int:
         return nums.sort(reverse=True)[k - 1]
 
@@ -19,10 +20,6 @@ class Solution:
         return heap[0]
 
     def findKthLargest(self, nums: List[int], k: int) -> int:
-        """
-        快速排序,打乱顺序后时间更快
-        O(n) O(1)
-        """
         import random
         random.shuffle(nums)
 
