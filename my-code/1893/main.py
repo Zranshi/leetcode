@@ -16,4 +16,10 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().isCovered(ranges=[[1, 2], [3, 4], [5, 6]], left=2, right=5))
+    print(
+        Solution().isCovered(
+            ranges=[[1, 2], [3, 4], [5, 6]],
+            left=2,
+            right=5,
+        )
+    )

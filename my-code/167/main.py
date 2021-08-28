@@ -1,3 +1,8 @@
+# -*- coding: UTF-8 -*-
+# @Time     : 2021/08/28 09:14
+# @Author   : Ranshi
+# @File     : main.py
+
 from typing import List
 
 
@@ -6,9 +11,9 @@ class Solution:
         mapping = {}
         for i in range(len(numbers)):
             if numbers[i] in mapping:
-                return [mapping[numbers[i]]+1, i+1]
+                return [mapping[numbers[i]] + 1, i + 1]
             else:
-                mapping[target-numbers[i]] = i
+                mapping[target - numbers[i]] = i
         return []
 
 

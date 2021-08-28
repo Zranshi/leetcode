@@ -13,8 +13,8 @@ class Solution:
             if nums[idx] == 0:
                 zero_num += 1
             else:
-                nums[idx-zero_num] = nums[idx]
-        for idx in range(-1, -zero_num-1, -1):
+                nums[idx - zero_num] = nums[idx]
+        for idx in range(-1, -zero_num - 1, -1):
             nums[idx] = 0
 
 

@@ -13,16 +13,16 @@ class Solution:
         le = ri - 1
         while le >= 0 and ri < len(nums):
             if abs(nums[le]) < nums[ri]:
-                res.append(nums[le] ** 2)
+                res.append(nums[le]**2)
                 le -= 1
             else:
-                res.append(nums[ri] ** 2)
+                res.append(nums[ri]**2)
                 ri += 1
         while le >= 0:
-            res.append(nums[le] ** 2)
+            res.append(nums[le]**2)
             le -= 1
         while ri < len(nums):
-            res.append(nums[ri] ** 2)
+            res.append(nums[ri]**2)
             ri += 1
         return res
 

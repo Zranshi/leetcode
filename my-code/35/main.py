@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def searchInsert(self, nums: List[int], target: int) -> int:
         left, right = 0, len(nums) - 1
         while left <= right:
@@ -20,5 +21,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
-    print(s.searchInsert([3, 3, 5, 6], 2))
+    print(Solution().searchInsert([3, 3, 5, 6], 2))
