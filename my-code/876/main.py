@@ -7,12 +7,14 @@ from typing import Optional
 
 
 class ListNode:
+
     def __init__(self, val: int = 0, _next: Optional['ListNode'] = None):
         self.val = val
         self.next = _next
 
 
 class Solution:
+
     def middleNode(self, head: ListNode) -> Optional[ListNode]:
         slow, fast = head, head
         while slow and fast and fast.next:

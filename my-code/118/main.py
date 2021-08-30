@@ -7,8 +7,7 @@ from typing import List
 
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
-        res = []
-        pre = []
+        res, pre = [], []
         for i in range(numRows):
             index = [1] * (i + 1)
             if i >= 2:

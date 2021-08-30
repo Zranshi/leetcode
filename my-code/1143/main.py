@@ -16,5 +16,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
-    print(s.longestCommonSubsequence(text1="abcde", text2="ace"))
+    print(Solution().longestCommonSubsequence(
+        text1="abcde",
+        text2="ace",
+    ))

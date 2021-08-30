@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
@@ -28,8 +29,4 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    s.setZeroes([
-        [0, 1, 2, 0],
-        [3, 4, 5, 2],
-        [1, 3, 1, 5]
-    ])
+    s.setZeroes([[0, 1, 2, 0], [3, 4, 5, 2], [1, 3, 1, 5]])

@@ -27,10 +27,4 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return linkHead.Next
 }
 
-func main() {
-	l := &ListNode{
-		Val:  0,
-		Next: nil,
-	}
-	removeNthFromEnd(l, 8)
-}
+func main() {}
