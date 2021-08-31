@@ -6,6 +6,7 @@ from collections import Counter
 
 
 class Solution:
+
     def checkInclusion(self, s1: str, s2: str) -> bool:
         s1_length, s2_length = len(s1), len(s2)
         s2 = s2 + "0"

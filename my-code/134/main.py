@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         a = []
         for i in range(len(gas)):

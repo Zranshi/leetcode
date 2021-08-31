@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def getOrder(self, tasks: List[List[int]]) -> List[int]:
         import heapq
         n = len(tasks)
@@ -31,8 +32,8 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.getOrder(
-        tasks=[[46, 9], [46, 42], [30, 46], [30, 13], [30, 24], [30, 5],
-               [30, 21], [29, 46], [29, 41], [29, 18],
-               [29, 16], [29, 17], [29, 5], [22, 15], [22, 13], [22, 25],
-               [22, 49], [22, 44]]))
+    print(
+        s.getOrder(
+            tasks=[[46, 9], [46, 42], [30, 46], [30, 13], [30, 24], [30, 5],
+                   [30, 21], [29, 46], [29, 41], [29, 18], [29, 16], [29, 17],
+                   [29, 5], [22, 15], [22, 13], [22, 25], [22, 49], [22, 44]]))

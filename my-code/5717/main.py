@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def minOperations(self, nums: List[int]) -> int:
         res = 0
         length = len(nums)

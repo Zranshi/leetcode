@@ -6,9 +6,10 @@ from typing import List
 
 
 class Solution:
+
     def maxFrequency(self, nums: List[int], k: int) -> int:
         nums.sort()
-        le, res, idx_add = 0, 0, 0
+        le, res = 0, 0
         pre = [0]
         for x in nums:
             pre.append(pre[-1] + x)

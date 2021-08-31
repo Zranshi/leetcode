@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+
     def findRepeatNumber(self, nums: List[int]) -> int:
         s = set()
         for x in nums:
@@ -13,6 +14,7 @@ class Solution:
                 return x
             else:
                 s.add(x)
+        return -1
 
 
 if __name__ == '__main__':
