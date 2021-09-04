@@ -3,7 +3,6 @@
 # @Author   : Ranshi
 # @File     : 232. 用栈实现队列.py
 class MyQueue:
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -46,7 +45,7 @@ class MyQueue:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     q = MyQueue()
     q.push(4)
     q.push(7)

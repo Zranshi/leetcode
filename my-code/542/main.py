@@ -7,9 +7,9 @@ from typing import List
 
 
 class Solution:
-
     def updateMatrix(self, matrix: List[List[int]]) -> List[List[int]]:
         from collections import deque
+
         m, n = len(matrix), len(matrix[0])
         dist = [[0] * n for _ in range(m)]
         zeroes_pos = [
@@ -31,9 +31,13 @@ class Solution:
         return dist
 
 
-if __name__ == '__main__':
-    print(Solution().updateMatrix(mat=[
-        [0, 0, 0],
-        [0, 1, 0],
-        [0, 0, 0],
-    ]))
+if __name__ == "__main__":
+    print(
+        Solution().updateMatrix(
+            mat=[
+                [0, 0, 0],
+                [0, 1, 0],
+                [0, 0, 0],
+            ]
+        )
+    )

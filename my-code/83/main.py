@@ -2,10 +2,7 @@
 # @Time     : 2021/05/28 17: 57
 # @Author   : Ranshi
 # @File     : 83. 删除排序链表中的重复元素.py
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from type.listNode import ListNode
 
 
 class Solution:

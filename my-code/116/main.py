@@ -5,11 +5,13 @@
 
 
 class Node:
-    def __init__(self,
-                 val: int = 0,
-                 left: 'Node' = None,
-                 right: 'Node' = None,
-                 next: 'Node' = None) -> None:
+    def __init__(
+        self,
+        val: int = 0,
+        left: "Node" = None,
+        right: "Node" = None,
+        next: "Node" = None,
+    ) -> None:
         self.val = val
         self.left = left
         self.right = right
@@ -17,8 +19,9 @@ class Node:
 
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect(self, root: "Node") -> "Node":
         from collections import deque
+
         if not root:
             return root
         dq = deque([root])
@@ -35,5 +38,5 @@ class Solution:
         return root
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

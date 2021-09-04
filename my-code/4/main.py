@@ -55,6 +55,6 @@ class Solution:
         return helper(nums1, nums2, k)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findMedianSortedArrays(nums1=[1, 3], nums2=[2]))

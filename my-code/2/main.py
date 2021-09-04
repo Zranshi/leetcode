@@ -3,25 +3,19 @@
 # @Author   : Ranshi
 # @File     : main.py
 
+from type.listNode import ListNode
 from typing import Optional
 
 
-class ListNode:
-
-    def __init__(self, val=0, next: 'ListNode' = None):
-        self.val = val
-        self.next = next
-
-
 class Solution:
-
-    def addTwoNumbers(self, l1: Optional[ListNode],
-                      l2: Optional[ListNode]) -> ListNode:
-        s1 = ''
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> ListNode:
+        s1 = ""
         while l1 is not None:
             s1 = s1 + str(l1.val)
             l1 = l1.next
-        s2 = ''
+        s2 = ""
         while l2 is not None:
             s2 = s2 + str(l2.val)
             l2 = l2.next
@@ -35,5 +29,5 @@ class Solution:
         return root
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

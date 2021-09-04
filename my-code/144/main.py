@@ -17,8 +17,8 @@ class Solution:
         def pre(root: TreeNode):
             if not root:
                 return
-            pre(root.left)
             res.append(root.val)
+            pre(root.left)
             pre(root.right)
 
         res = []

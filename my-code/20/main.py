@@ -4,7 +4,7 @@
 # @File     : 20. 有效的括号.py
 class Solution:
     def isValid(self, string: str) -> bool:
-        stack, front, back = [], ['(', '[', '{'], [')', ']', '}']
+        stack, front, back = [], ["(", "[", "{"], [")", "]", "}"]
         for x in string:
             if x in front:
                 stack.append(x)
@@ -18,6 +18,6 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.isValid(string="()]{}"))
