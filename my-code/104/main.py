@@ -2,16 +2,13 @@
 # @Time     : 2021/5/19 20:15
 # @Author   : Ranshi
 # @File     : 104. 二叉树的最大深度.py
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from type.tree_node import TreeNode
 
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         from collections import deque
+
         if not root:
             return 0
         de = deque()

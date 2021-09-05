@@ -3,13 +3,7 @@
 # @Author   : Ranshi
 # @File     : 94. 二叉树的中序遍历.py
 from typing import List
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from type.tree_node import TreeNode
 
 
 class Solution:

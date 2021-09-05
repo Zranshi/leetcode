@@ -41,5 +41,5 @@ class TreeNode(object):
                 dq.appendleft((idx.left, idx_level + 1))
                 dq.appendleft((idx.right, idx_level + 1))
             else:
-                level_node[idx_level].append(f"{None:4}")
-        return "\n".join(" ".join(item) for item in level_node)
+                level_node[idx_level].append(f"{'None':4}")
+        return "\n".join(" ".join(item) for item in level_node[:-1])
