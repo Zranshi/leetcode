@@ -16,5 +16,5 @@ class Solution:
         return dp[-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().rob([1, 2, 3, 1]))

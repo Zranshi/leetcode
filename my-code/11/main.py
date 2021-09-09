@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def maxArea(self, height: List[int]) -> int:
         res, left, right = 0, 0, len(height) - 1
         while left < right:
@@ -19,6 +18,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]))
