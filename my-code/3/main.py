@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def lengthOfLongestSubstring(self, s: str) -> int:
         """
         无重复字符的最长子串.
@@ -35,5 +34,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().lengthOfLongestSubstring(s="abcabcbb"))

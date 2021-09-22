@@ -4,7 +4,7 @@
 # @File     : 58. 最后一个单词长度.py
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        return len(s.strip().split(' ')[-1])
+        return len(s.strip().split(" ")[-1])
 
 
 if __name__ == "__main__":

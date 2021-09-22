@@ -3,25 +3,19 @@
 # @Author   : Ranshi
 # @File     : tree_node.py
 # @Doc      : TreeNode 类
-
-
-from typing import List, Optional
-from collections import deque
-
-
 class TreeNode(object):
     def __init__(
         self,
-        val=None,
-        left: Optional["TreeNode"] = None,
-        right: Optional["TreeNode"] = None,
+        val: int = 0,
+        left: "TreeNode" = None,
+        right: "TreeNode" = None,
     ) -> None:
         self.val = val
         self.left = left
         self.right = right
 
     @classmethod
-    def init_by_list(cls, lst: list, idx: int = 0) -> Optional["TreeNode"]:
+    def init_by_list(cls, lst: list, idx: int = 0) -> "TreeNode":
         if idx < len(lst) and lst[idx]:
             return TreeNode(
                 val=lst[idx],
@@ -30,16 +24,25 @@ class TreeNode(object):
             )
 
     def __str__(self) -> str:
-        level_node: List[List[str]] = [[]]
-        dq = deque([(self, 0)])
-        while dq:
-            idx, idx_level = dq.pop()
-            if idx_level >= len(level_node):
-                level_node.append([])
-            if idx:
-                level_node[idx_level].append(f"{idx.val:4}")
-                dq.appendleft((idx.left, idx_level + 1))
-                dq.appendleft((idx.right, idx_level + 1))
-            else:
-                level_node[idx_level].append(f"{'None':4}")
-        return "\n".join(" ".join(item) for item in level_node[:-1])
+        if not self:
+            return ""
+        que = [self]
+        res = []
+        while que:
+            res.append(
+                " ".join(
+                    [f"{item.val:4}" if item else f"{'None':4}" for item in que]
+                )
+            )
+            new_que = []
+            for idx in que:
+                if idx:
+                    new_que.append(idx.left)
+                    new_que.append(idx.right)
+                else:
+                    new_que.append(None)
+                    new_que.append(None)
+            if not any(new_que):
+                break
+            que = new_que
+        return "\n".join(res)

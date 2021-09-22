@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         s = {}  # 将已经读取的元素放入哈希表中, 其中目标值为key, 列表下标为val.
         for i in range(len(nums)):
@@ -17,5 +16,5 @@ class Solution:
         return []
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().twoSum(nums=[2, 7, 11, 15], target=9))

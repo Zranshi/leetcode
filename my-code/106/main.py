@@ -3,13 +3,7 @@
 # @Author   : Ranshi
 # @File     : 106. 从中序与后序遍历序列构造二叉树.py
 from typing import List
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from type.tree_node import TreeNode
 
 
 class Solution:
@@ -21,12 +15,12 @@ class Solution:
             rootInx = iOrder.index(root.val)
 
             root.left = helper(iOrder[0:rootInx], pOrder[0:rootInx])
-            root.right = helper(iOrder[rootInx + 1:], pOrder[rootInx:-1])
+            root.right = helper(iOrder[rootInx + 1 :], pOrder[rootInx:-1])
             return root
 
         return helper(inorder, postorder)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.buildTree(inorder=[9, 3, 15, 20, 7], postorder=[9, 15, 7, 20, 3]))
