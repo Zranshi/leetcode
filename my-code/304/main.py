@@ -12,7 +12,10 @@ class NumMatrix:
         for i in range(m):
             for j in range(n):
                 self.m[i + 1][j + 1] = (
-                    self.m[i][j + 1] + self.m[i + 1][j] - self.m[i][j] + matrix[i][j]
+                    self.m[i][j + 1]
+                    + self.m[i + 1][j]
+                    - self.m[i][j]
+                    + matrix[i][j]
                 )
 
     def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:

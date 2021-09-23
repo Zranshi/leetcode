@@ -7,7 +7,12 @@ from typing import List
 
 class Solution:
     def minCost(
-        self, houses: List[int], cost: List[List[int]], m: int, n: int, target: int
+        self,
+        houses: List[int],
+        cost: List[List[int]],
+        m: int,
+        n: int,
+        target: int,
     ) -> int:
         houses = [c - 1 for c in houses]
 

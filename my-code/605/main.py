@@ -11,7 +11,9 @@ class Solution:
 
         def isEmpty(index: int) -> bool:
             return (
-                True if index < 0 or index >= length or flowerbed[index] == 0 else False
+                True
+                if index < 0 or index >= length or flowerbed[index] == 0
+                else False
             )
 
         for i in range(length):

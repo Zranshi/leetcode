@@ -17,5 +17,8 @@ class Solution:
         for item in employees:
             if item.id == targetId:
                 return item.importance + sum(
-                    [self.getImportance(employees, i) for i in item.subordinates]
+                    [
+                        self.getImportance(employees, i)
+                        for i in item.subordinates
+                    ]
                 )

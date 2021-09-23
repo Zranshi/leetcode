@@ -25,7 +25,9 @@ class Solution:
                 path[idx] = idx_path
                 for i in range(1, 7):
                     if 1 <= idx + i <= n * n:
-                        next_idx = idx + i if idx + i not in send else send[idx + i]
+                        next_idx = (
+                            idx + i if idx + i not in send else send[idx + i]
+                        )
                         dq.appendleft((next_idx, idx_path + 1))
             dq.pop()
         return idx_path if dq else -1

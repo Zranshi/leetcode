@@ -24,7 +24,9 @@ class Solution:
         n = len(prices)
         sell, buy = 0, -prices[0]
         for i in range(1, n):
-            sell, buy = max(sell, buy + prices[i] - fee), max(buy, sell - prices[i])
+            sell, buy = max(sell, buy + prices[i] - fee), max(
+                buy, sell - prices[i]
+            )
         return 0
 
     def maxProfit(self, prices: List[int], fee: int) -> int:

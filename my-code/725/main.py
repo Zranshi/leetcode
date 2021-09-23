@@ -27,4 +27,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(Solution().splitListToParts(head=ListNode.init_by_lst([1, 2, 3]), k=5))
+    print(
+        Solution().splitListToParts(head=ListNode.init_by_lst([1, 2, 3]), k=5)
+    )

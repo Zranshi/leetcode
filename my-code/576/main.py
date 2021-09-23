@@ -18,7 +18,12 @@ class Solution:
             for j in range(m):
                 for k in range(n):
                     if dp[j][k] > 0:
-                        for j1, k1 in [(j - 1, k), (j + 1, k), (j, k - 1), (j, k + 1)]:
+                        for j1, k1 in [
+                            (j - 1, k),
+                            (j + 1, k),
+                            (j, k - 1),
+                            (j, k + 1),
+                        ]:
                             if 0 <= j1 < m and 0 <= k1 < n:
                                 dpNew[j1][k1] = (dpNew[j1][k1] + dp[j][k]) % MOD
                             else:

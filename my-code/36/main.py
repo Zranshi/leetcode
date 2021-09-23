@@ -20,15 +20,21 @@ class Solution:
             repeat_row = set()
 
             for j in range(L):
-                if board[i][j] != "." and is_repeat_or_add(board[i][j], repeat_row):
+                if board[i][j] != "." and is_repeat_or_add(
+                    board[i][j], repeat_row
+                ):
                     return False
 
-                if board[j][i] != "." and is_repeat_or_add(board[j][i], repeat_col):
+                if board[j][i] != "." and is_repeat_or_add(
+                    board[j][i], repeat_col
+                ):
                     return False
 
         for i, j in ((i, j) for i in range(0, L, 3) for j in range(0, L, 3)):
             repeat = set()
-            for next_i, next_j in ((i, j) for i in range(0, 3) for j in range(0, 3)):
+            for next_i, next_j in (
+                (i, j) for i in range(0, 3) for j in range(0, 3)
+            ):
                 idx = board[i + next_i][j + next_j]
                 if idx != "." and is_repeat_or_add(idx, repeat):
                     return False

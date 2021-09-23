@@ -6,7 +6,9 @@ from typing import List
 
 
 class Solution:
-    def matrixReshape(self, nums: List[List[int]], r: int, c: int) -> List[List[int]]:
+    def matrixReshape(
+        self, nums: List[List[int]], r: int, c: int
+    ) -> List[List[int]]:
         m, n = len(nums), len(nums[0])
         if m * n != r * c:
             return nums

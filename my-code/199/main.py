@@ -7,7 +7,9 @@ from typing import List
 
 
 class TreeNode:
-    def __init__(self, val=0, left: "TreeNode" = None, right: "TreeNode" = None):
+    def __init__(
+        self, val=0, left: "TreeNode" = None, right: "TreeNode" = None
+    ):
         self.val = val
         self.left = left
         self.right = right
@@ -32,7 +34,9 @@ class Solution:
                 stack.append((node.left, depth + 1))
                 stack.append((node.right, depth + 1))
 
-        return [rightmost_value_at_depth[depth] for depth in range(max_depth + 1)]
+        return [
+            rightmost_value_at_depth[depth] for depth in range(max_depth + 1)
+        ]
 
 
 if __name__ == "__main__":

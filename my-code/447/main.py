@@ -12,7 +12,9 @@ class Solution:
         for p in points:
             cnt = defaultdict(int)
             for q in points:
-                dis = (p[0] - q[0]) * (p[0] - q[0]) + (p[1] - q[1]) * (p[1] - q[1])
+                dis = (p[0] - q[0]) * (p[0] - q[0]) + (p[1] - q[1]) * (
+                    p[1] - q[1]
+                )
                 cnt[dis] += 1
             for m in cnt.values():
                 ans += m * (m - 1)

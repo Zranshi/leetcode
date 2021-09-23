@@ -6,7 +6,9 @@ from typing import List
 
 
 class Solution:
-    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
+    def containsNearbyAlmostDuplicate(
+        self, nums: List[int], k: int, t: int
+    ) -> bool:
         from sortedcontainers import SortedSet
 
         st = SortedSet()
@@ -20,7 +22,11 @@ class Solution:
 
             index = st.bisect_left(nums[right] - t)
 
-            if st and 0 <= index < len(st) and abs(st[index] - nums[right]) <= t:
+            if (
+                st
+                and 0 <= index < len(st)
+                and abs(st[index] - nums[right]) <= t
+            ):
                 return True
 
             st.add(nums[right])

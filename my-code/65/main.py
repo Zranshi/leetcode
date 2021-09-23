@@ -24,7 +24,13 @@ class Solution:
         )
         Chartype = Enum(
             "Chartype",
-            ["CHAR_NUMBER", "CHAR_EXP", "CHAR_POINT", "CHAR_SIGN", "CHAR_ILLEGAL"],
+            [
+                "CHAR_NUMBER",
+                "CHAR_EXP",
+                "CHAR_POINT",
+                "CHAR_SIGN",
+                "CHAR_ILLEGAL",
+            ],
         )
 
         def toChartype(ch: str) -> Chartype:
@@ -58,7 +64,9 @@ class Solution:
                 Chartype.CHAR_NUMBER: State.STATE_FRACTION,
                 Chartype.CHAR_EXP: State.STATE_EXP,
             },
-            State.STATE_POINT_WITHOUT_INT: {Chartype.CHAR_NUMBER: State.STATE_FRACTION},
+            State.STATE_POINT_WITHOUT_INT: {
+                Chartype.CHAR_NUMBER: State.STATE_FRACTION
+            },
             State.STATE_FRACTION: {
                 Chartype.CHAR_NUMBER: State.STATE_FRACTION,
                 Chartype.CHAR_EXP: State.STATE_EXP,
@@ -67,8 +75,12 @@ class Solution:
                 Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER,
                 Chartype.CHAR_SIGN: State.STATE_EXP_SIGN,
             },
-            State.STATE_EXP_SIGN: {Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER},
-            State.STATE_EXP_NUMBER: {Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER},
+            State.STATE_EXP_SIGN: {
+                Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER
+            },
+            State.STATE_EXP_NUMBER: {
+                Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER
+            },
         }
 
         st = State.STATE_INITIAL

@@ -7,7 +7,9 @@ from typing import List
 
 
 class Solution:
-    def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
+    def corpFlightBookings(
+        self, bookings: List[List[int]], n: int
+    ) -> List[int]:
         diff, plants = [0 for _ in range(n + 2)], [0 for _ in range(n)]
         for v in bookings:
             diff[v[0]] += v[2]

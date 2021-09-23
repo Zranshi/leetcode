@@ -32,5 +32,7 @@ class Solution:
 
 if __name__ == "__main__":
     print(
-        Solution().floodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr=1, sc=1, new_color=2)
+        Solution().floodFill(
+            [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr=1, sc=1, new_color=2
+        )
     )

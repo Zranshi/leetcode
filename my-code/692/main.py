@@ -17,6 +17,18 @@ if __name__ == "__main__":
     s = Solution()
     print(
         s.topKFrequent(
-            ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], k=4
+            [
+                "the",
+                "day",
+                "is",
+                "sunny",
+                "the",
+                "the",
+                "the",
+                "sunny",
+                "is",
+                "is",
+            ],
+            k=4,
         )
     )

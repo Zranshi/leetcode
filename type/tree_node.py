@@ -30,7 +30,9 @@ class TreeNode(object):
         res = []
         while que:
             res.append(
-                " ".join([f"{item.val:4}" if item else f"{'None':4}" for item in que])
+                " ".join(
+                    [f"{item.val:4}" if item else f"{'None':4}" for item in que]
+                )
             )
             new_que = []
             for idx in que:

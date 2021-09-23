@@ -42,7 +42,12 @@ class Solution:
         # 格点数=(边长+1)*(边长+1)，所有格点初始化为指向自己
         V = {(i, j): (i, j) for j in range(size + 1) for i in range(size + 1)}
         for i in range(size + 1):  # 边框的格点是全部连接的，因此初始化为同一个集合
-            V[i, 0], V[0, i], V[size, i], V[i, size] = (0, 0), (0, 0), (0, 0), (0, 0)
+            V[i, 0], V[0, i], V[size, i], V[i, size] = (
+                (0, 0),
+                (0, 0),
+                (0, 0),
+                (0, 0),
+            )
 
         # 获取坐标c的格点的集合标记，用两点集合标记相同来表示两点相连
         def find(c):

@@ -26,4 +26,8 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(Solution().levelOrder(TreeNode.init_by_list([3, 9, 20, None, None, 15, 7])))
+    print(
+        Solution().levelOrder(
+            TreeNode.init_by_list([3, 9, 20, None, None, 15, 7])
+        )
+    )

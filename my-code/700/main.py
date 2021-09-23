@@ -12,5 +12,7 @@ class Solution:
 
 if __name__ == "__main__":
     print(
-        Solution().searchBST(TreeNode.init_by_list([4, 2, 7, 1, 3, None, None], val=5))
+        Solution().searchBST(
+            TreeNode.init_by_list([4, 2, 7, 1, 3, None, None], val=5)
+        )
     )

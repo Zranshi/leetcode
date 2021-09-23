@@ -17,4 +17,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(Solution().invertTree(TreeNode.init_by_list([4, 2, 7, 1, 3, 6, 9, 10])))
+    print(
+        Solution().invertTree(TreeNode.init_by_list([4, 2, 7, 1, 3, 6, 9, 10]))
+    )

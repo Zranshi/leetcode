@@ -7,7 +7,9 @@ from typing import List
 
 
 class Solution:
-    def findNumOfValidWords(self, words: List[str], puzzles: List[str]) -> List[int]:
+    def findNumOfValidWords(
+        self, words: List[str], puzzles: List[str]
+    ) -> List[int]:
         frequency = collections.Counter()
 
         for word in words:
@@ -57,7 +59,22 @@ if __name__ == "__main__":
     s = Solution()
     print(
         s.findNumOfValidWords(
-            words=["aaaa", "asas", "able", "ability", "actt", "actor", "access"],
-            puzzles=["aboveyz", "abrodyz", "abslute", "absoryz", "actresz", "gaswxyz"],
+            words=[
+                "aaaa",
+                "asas",
+                "able",
+                "ability",
+                "actt",
+                "actor",
+                "access",
+            ],
+            puzzles=[
+                "aboveyz",
+                "abrodyz",
+                "abslute",
+                "absoryz",
+                "actresz",
+                "gaswxyz",
+            ],
         )
     )

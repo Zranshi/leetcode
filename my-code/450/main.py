@@ -32,7 +32,9 @@ class Solution:
             root = root.right
         return root.val
 
-    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+    def deleteNode(
+        self, root: Optional[TreeNode], key: int
+    ) -> Optional[TreeNode]:
         if not root:
             return None
 

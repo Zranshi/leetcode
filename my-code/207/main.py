@@ -6,7 +6,9 @@ from typing import List
 
 
 class Solution:
-    def canFinish(self, num_courses: int, prerequisites: List[List[int]]) -> bool:
+    def canFinish(
+        self, num_courses: int, prerequisites: List[List[int]]
+    ) -> bool:
         """
         bfs
         :param num_courses:
