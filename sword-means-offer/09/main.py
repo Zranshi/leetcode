@@ -2,8 +2,6 @@
 # @Time     : 2021/09/23 08:14
 # @Author   : Ranshi
 # @File     : main.py
-
-
 class CQueue:
     def __init__(self):
         self._push_stk = []
