@@ -6,9 +6,7 @@ from typing import List
 
 
 class Solution:
-    def maxNumber(
-            self, nums1: List[int],
-            nums2: List[int], k: int) -> List[int]:
+    def maxNumber(self, nums1: List[int], nums2: List[int], k: int) -> List[int]:
         def getMaXArr(nums, i):
             if not i:
                 return []
@@ -25,14 +23,11 @@ class Solution:
 
         return max(
             merge(getMaXArr(nums1, i), getMaXArr(nums2, k - i))
-            for i in range(k + 1) if i <= len(nums1) and k - i <= len(nums2)
+            for i in range(k + 1)
+            if i <= len(nums1) and k - i <= len(nums2)
         )
 
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.maxNumber(
-        nums1=[3, 4, 6, 5],
-        nums2=[9, 1, 2, 5, 8, 3],
-        k=5
-    ))
+    print(s.maxNumber(nums1=[3, 4, 6, 5], nums2=[9, 1, 2, 5, 8, 3], k=5))

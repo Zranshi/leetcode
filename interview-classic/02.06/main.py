@@ -7,13 +7,12 @@ from typing import Optional
 
 
 class ListNode:
-    def __init__(self, val: int = 0, _next: Optional['ListNode'] = None):
+    def __init__(self, val: int = 0, _next: Optional["ListNode"] = None):
         self.val = val
         self.next = _next
 
 
 class Solution:
-
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         if head is None:
             return True

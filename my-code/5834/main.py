@@ -5,10 +5,9 @@
 
 
 class Solution:
-
     def minTimeToType(self, word: str) -> int:
         res = 0
-        idx_ch = 'a'
+        idx_ch = "a"
         for ch in word:
             path = abs(ord(idx_ch) - ord(ch))
             res += (path if path < 26 - path else 26 - path) + 1
@@ -16,5 +15,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().minTimeToType("zjpc"))

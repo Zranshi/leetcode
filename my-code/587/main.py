@@ -13,8 +13,7 @@ class Solution:
         points.sort(key=lambda x: (x[0], x[1]))
 
         def cross(a, b, c):
-            return (b[0] - a[0]) * \
-                   (c[1] - b[1]) - (b[1] - a[1]) * (c[0] - b[0])
+            return (b[0] - a[0]) * (c[1] - b[1]) - (b[1] - a[1]) * (c[0] - b[0])
 
         low = []
         for p in points:

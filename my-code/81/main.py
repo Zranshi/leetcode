@@ -13,6 +13,6 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.search(nums=[2, 5, 6, 0, 0, 1, 2], target=0))

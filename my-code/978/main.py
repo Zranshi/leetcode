@@ -24,6 +24,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxTurbulenceSize([9, 4, 2, 10, 7, 8, 8, 1, 9]))

@@ -22,7 +22,10 @@ class Solution:
         return min(gap.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.leastBricks([[1, 2, 2, 1], [3, 1, 2], [
-        1, 3, 2], [2, 4], [3, 1, 2], [1, 3, 1, 1]]))
+    print(
+        s.leastBricks(
+            [[1, 2, 2, 1], [3, 1, 2], [1, 3, 2], [2, 4], [3, 1, 2], [1, 3, 1, 1]]
+        )
+    )

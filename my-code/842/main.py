@@ -15,9 +15,9 @@ class Solution:
                 return len(ans) >= 3
             curr = 0
             for i in range(index, len(S)):
-                if i > index and S[index] == '0':
+                if i > index and S[index] == "0":
                     break
-                curr = curr * 10 + ord(S[i]) - ord('0')
+                curr = curr * 10 + ord(S[i]) - ord("0")
                 if curr > INT_MAX:
                     break
                 if len(ans) < 2 or curr == ans[-2] + ans[-1]:

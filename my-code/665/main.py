@@ -19,6 +19,6 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.checkPossibility([-1, 4, 2, 3]))

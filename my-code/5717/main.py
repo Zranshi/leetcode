@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def minOperations(self, nums: List[int]) -> int:
         res = 0
         length = len(nums)
@@ -19,6 +18,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minOperations(nums=[1, 5, 2, 4, 1]))

@@ -19,10 +19,6 @@ class Solution:
                     idx, matrix[x][y] = matrix[x][y], idx
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.rotate([
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]
-    ]))
+    print(s.rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))

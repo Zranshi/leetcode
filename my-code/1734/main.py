@@ -21,6 +21,6 @@ class Solution:
         return perm
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.decode(encoded=[3, 1]))

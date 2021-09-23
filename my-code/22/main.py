@@ -10,19 +10,19 @@ class Solution:
         def generate(a):
             if len(a) == 2 * n:
                 if valid(a):
-                    ans.append(''.join(a))
+                    ans.append("".join(a))
             else:
-                a.append('(')
+                a.append("(")
                 generate(a)
                 a.pop()
-                a.append(')')
+                a.append(")")
                 generate(a)
                 a.pop()
 
         def valid(a):
             bal = 0
             for c in a:
-                if c == '(':
+                if c == "(":
                     bal += 1
                 else:
                     bal -= 1
@@ -35,6 +35,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.generateParenthesis(n=3))

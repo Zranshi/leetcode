@@ -5,7 +5,7 @@
 import collections
 
 
-class Solution():
+class Solution:
     def minKBitFlips(self, A, K):
         length, res, que = len(A), 0, collections.deque()
         for i in range(length):
@@ -19,6 +19,6 @@ class Solution():
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minKBitFlips(A=[1, 1, 0], K=2))

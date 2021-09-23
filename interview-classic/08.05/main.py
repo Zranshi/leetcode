@@ -11,6 +11,6 @@ class Solution:
         return a + self.multiply(a << 1, (b - 1) >> 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.multiply(1, 10))

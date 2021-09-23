@@ -3,9 +3,11 @@
 # @Author   : Ranshi
 # @File     : 1525. 字符串的好分割数目.py
 
+
 class Solution:
     def numSplits(self, s: str) -> int:
         from collections import defaultdict
+
         left = defaultdict(lambda: 0)
         right = defaultdict(lambda: 0)
         for char in s:

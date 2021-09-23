@@ -8,6 +8,7 @@ class Solution:
         栈
         """
         from collections import Counter
+
         c = Counter(s)
         stack = []
         existed = set()

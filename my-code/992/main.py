@@ -26,6 +26,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.subarraysWithKDistinct(A=[1, 2, 1, 3, 4], K=3))

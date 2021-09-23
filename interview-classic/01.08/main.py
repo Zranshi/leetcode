@@ -21,10 +21,6 @@ class Solution:
                     matrix[i][j] = 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.setZeroes([
-        [1, 1, 1],
-        [1, 0, 1],
-        [1, 1, 1]
-    ]))
+    print(s.setZeroes([[1, 1, 1], [1, 0, 1], [1, 1, 1]]))

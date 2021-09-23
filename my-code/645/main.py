@@ -17,6 +17,6 @@ class Solution:
         return [repeat, lost]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findErrorNums([1, 5, 3, 2, 2, 7, 6, 4, 8, 9]))

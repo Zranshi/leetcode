@@ -31,7 +31,5 @@ class Solution:
 
 if __name__ == "__main__":
     print(
-        Solution().findMaximizedCapital(
-            k=2, w=0, profits=[1, 2, 3], capital=[0, 1, 1]
-        )
+        Solution().findMaximizedCapital(k=2, w=0, profits=[1, 2, 3], capital=[0, 1, 1])
     )

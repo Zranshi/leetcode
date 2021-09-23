@@ -3,16 +3,13 @@
 # @Author   : Ranshi
 # @File     : main.py
 class ListNode:
-
     def __init__(self, val=0, _next=None):
         self.val = val
         self.next = _next
 
 
 class Solution:
-
     def sortList(self, head: ListNode) -> ListNode:
-
         def sort_func(h: ListNode, tail: ListNode) -> ListNode:
             if not h:
                 return h

@@ -10,6 +10,6 @@ class Solution:
             return max(len(a), len(b))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findLUSlength("aba", "cdc"))

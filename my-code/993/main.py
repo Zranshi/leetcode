@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 993. 二叉树的堂兄弟节点.py
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -13,6 +14,7 @@ class TreeNode:
 class Solution:
     def isCousins(self, root: TreeNode, x: int, y: int) -> bool:
         from collections import deque
+
         x_pre, x_lev, y_pre, y_lev = 0, 0, 0, 0
         de = deque()
         de.append([root, 0])

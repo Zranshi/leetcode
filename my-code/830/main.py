@@ -8,7 +8,7 @@ from typing import List
 class Solution:
     def largeGroupPositions1(self, s: str) -> List[List[int]]:
         res = []
-        s = s[:] + '$'
+        s = s[:] + "$"
         length = 1
         for i, x in enumerate(s):
             if x != s[i - 1]:

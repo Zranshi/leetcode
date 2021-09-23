@@ -6,9 +6,8 @@ from typing import List
 
 
 class Solution:
-
     def maxSubArray(self, nums: List[int]) -> int:
-        res, ans = -float('inf'), 0
+        res, ans = -float("inf"), 0
         for x in nums:
             ans += x
             res = max(ans, res)
@@ -16,6 +15,6 @@ class Solution:
         return int(res)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxSubArray(nums=[-2]))

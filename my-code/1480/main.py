@@ -14,5 +14,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().runningSum(nums=[1]))

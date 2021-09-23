@@ -19,6 +19,6 @@ class Solution:
         return sum(stack)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.clumsy(10))

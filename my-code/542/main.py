@@ -12,9 +12,7 @@ class Solution:
 
         m, n = len(matrix), len(matrix[0])
         dist = [[0] * n for _ in range(m)]
-        zeroes_pos = [
-            (i, j) for i in range(m) for j in range(n) if matrix[i][j] == 0
-        ]
+        zeroes_pos = [(i, j) for i in range(m) for j in range(n) if matrix[i][j] == 0]
         # 将所有的 0 添加进初始队列中
         q = deque(zeroes_pos)
         seen = set(zeroes_pos)

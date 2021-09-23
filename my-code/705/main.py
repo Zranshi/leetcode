@@ -3,7 +3,6 @@
 # @Author   : Ranshi
 # @File     : 705. 设计哈希集合.py
 class MyHashSet:
-
     def __init__(self):
         self.set = [False] * 1000001
 

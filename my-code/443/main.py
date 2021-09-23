@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-
     def compress(self, chars: List[str]) -> int:
-
         def reverse(left: int, right: int) -> None:
             while left < right:
                 chars[left], chars[right] = chars[right], chars[left]
@@ -34,5 +32,5 @@ class Solution:
         return write
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().compress(chars=["a", "a", "b", "b", "c", "c", "c"]))

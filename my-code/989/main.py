@@ -18,6 +18,6 @@ class Solution:
         return res[::-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.addToArrayForm(A=[1, 2, 0, 0], K=34))

@@ -11,10 +11,10 @@ class Solution:
         for i in range(len(first)):
             if first[i] == second[i]:
                 continue
-            return first[i:] == second[i + 1:] or first[i + 1:] == second[i + 1:]
+            return first[i:] == second[i + 1 :] or first[i + 1 :] == second[i + 1 :]
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.oneEditAway(first="pale", second="ple"))

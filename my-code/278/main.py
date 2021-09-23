@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def firstBadVersion(self, n: int) -> int:
         le, ri = 0, n
         while le < ri:

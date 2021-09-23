@@ -18,8 +18,12 @@ class Solution:
             while q:
                 x, y = q.popleft()
                 for nx, ny in [(x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)]:
-                    if 0 <= nx < m and 0 <= ny < n and (nx, ny) not in seen \
-                            and abs(heights[x][y] - heights[nx][ny]) <= mid:
+                    if (
+                        0 <= nx < m
+                        and 0 <= ny < n
+                        and (nx, ny) not in seen
+                        and abs(heights[x][y] - heights[nx][ny]) <= mid
+                    ):
                         q.append((nx, ny))
                         seen.add((nx, ny))
             if (m - 1, n - 1) in seen:
@@ -30,6 +34,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minimumEffortPath(heights=[[1, 2, 2], [3, 8, 2], [5, 3, 5]]))

@@ -31,7 +31,6 @@ class Solution:
         return n - num
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.removeStones(
-        stones=[[0, 0], [0, 1], [1, 0], [1, 2], [2, 1], [2, 2]]))
+    print(s.removeStones(stones=[[0, 0], [0, 1], [1, 0], [1, 2], [2, 1], [2, 2]]))

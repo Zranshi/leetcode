@@ -6,10 +6,9 @@ from typing import List
 
 
 class Solution:
-
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
-            return ''
+            return ""
         length = len(strs)
         if length == 1:
             return strs[0]
@@ -20,6 +19,6 @@ class Solution:
         return strs[0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.longestCommonPrefix(strs=["dog", "racecar", "car"]))

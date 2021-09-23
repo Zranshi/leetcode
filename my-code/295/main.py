@@ -26,7 +26,7 @@ class MedianFinder:
         return (-self.min[0] + self.max[0]) / 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     mf = MedianFinder()
     for i in range(1, 100, 10):
         mf.addNum(i)

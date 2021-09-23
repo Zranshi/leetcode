@@ -10,6 +10,6 @@ class Solution:
         return A == B or C == A
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.isMonotonic([1, 2, 2, 3]))

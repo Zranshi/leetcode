@@ -6,9 +6,7 @@ from typing import List
 
 
 class Solution:
-    def xorQueries(
-            self, arr: List[int],
-            queries: List[List[int]]) -> List[int]:
+    def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
         res = []
         pre = [0]
         for x in arr:
@@ -18,7 +16,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.xorQueries(arr=[1, 3, 4, 8], queries=[
-        [0, 0], [1, 2], [0, 3], [3, 3]]))
+    print(s.xorQueries(arr=[1, 3, 4, 8], queries=[[0, 0], [1, 2], [0, 3], [3, 3]]))

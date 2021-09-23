@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 872. 叶子相似的树.py
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val

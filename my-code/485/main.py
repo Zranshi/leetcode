@@ -17,6 +17,6 @@ class Solution:
         return max(idx, res)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]))

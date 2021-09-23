@@ -14,6 +14,6 @@ class Solution:
                 return [x + res, x]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.fairCandySwap(A=[1, 2], B=[2, 3]))

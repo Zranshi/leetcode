@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def reverseStr(self, s: str, k: int) -> str:
         res = list(s)
         i = 0
@@ -20,8 +19,8 @@ class Solution:
         else:
             rev_str(i, (len(s) - 1 if len(s) - i <= k else i + k - 1))
 
-        return ''.join(res)
+        return "".join(res)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().reverseStr(s="abcdefg", k=2))

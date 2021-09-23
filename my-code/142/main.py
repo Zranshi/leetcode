@@ -5,14 +5,12 @@
 
 
 class ListNode:
-
     def __init__(self, x):
         self.val = x
         self.next = None
 
 
 class Solution(object):
-
     def detectCycle(self, head):
         fast, slow = head, head
         while True:
@@ -27,5 +25,5 @@ class Solution(object):
         return fast
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

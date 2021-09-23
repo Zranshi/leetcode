@@ -3,7 +3,6 @@
 # @Author   : Ranshi
 # @File     : 面试题 03.01. 三合一.py
 class TripleInOne:
-
     def __init__(self, stack_size: int):
         self.max_len = stack_size
         self.stack = [[], [], []]
@@ -26,6 +25,7 @@ class TripleInOne:
 
     def isEmpty(self, stack_num: int) -> bool:
         return len(self.stack[stack_num]) == 0
+
 
 # Your TripleInOne object will be instantiated and called as such:
 # obj = TripleInOne(stackSize)

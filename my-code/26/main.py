@@ -18,6 +18,6 @@ class Solution:
         return len(nums) - index
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.removeDuplicates(nums=[1, 1, 2]))

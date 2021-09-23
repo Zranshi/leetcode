@@ -12,14 +12,16 @@ class Solution:
         for i, j in [(i, j) for i in range(row) for j in range(col)]:
             if grid[i][j] == 1:
                 for path in {(1, 0), (-1, 0), (0, 1), (0, -1)}:
-                    if not (0 <= i + path[0] < row and 0 <= j + path[1] < col) or grid[i + path[0]][j + path[1]] == 0:
+                    if (
+                        not (0 <= i + path[0] < row and 0 <= j + path[1] < col)
+                        or grid[i + path[0]][j + path[1]] == 0
+                    ):
                         res += 1
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.islandPerimeter(grid=[[0, 1, 0, 0],
-                                  [1, 1, 1, 0],
-                                  [0, 1, 0, 0],
-                                  [1, 1, 0, 0]]))
+    print(
+        s.islandPerimeter(grid=[[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]])
+    )

@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : 1281. 整数的各位积和之差.py
 
+
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         add, mul = 0, 1
@@ -14,6 +15,6 @@ class Solution:
         return mul - add
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.subtractProductAndSum(n=234))

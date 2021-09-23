@@ -5,10 +5,9 @@
 
 
 class Solution:
-
     def countSegments(self, s: str) -> int:
-        return len([item for item in s.split(' ') if item])
+        return len([item for item in s.split(" ") if item])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().countSegments(""))

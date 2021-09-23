@@ -10,8 +10,9 @@ class Solution:
         length = len(flowerbed)
 
         def isEmpty(index: int) -> bool:
-            return True if index < 0 or index >= length or \
-                           flowerbed[index] == 0 else False
+            return (
+                True if index < 0 or index >= length or flowerbed[index] == 0 else False
+            )
 
         for i in range(length):
             if n == 0:
@@ -41,6 +42,6 @@ class Solution:
         return count >= n
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.canPlaceFlowers(flowerbed=[0, 0, 0, 0, 0, 1, 0, 0], n=0))

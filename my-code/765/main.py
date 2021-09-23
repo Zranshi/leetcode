@@ -24,6 +24,6 @@ class Solution:
         return c
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minSwapsCouples(row=[0, 2, 1, 3]))

@@ -3,7 +3,6 @@
 # @Author   : Ranshi
 # @File     : main.py
 class Solution:
-
     def minRemoveToMakeValid(self, s: str) -> str:
         indexes_to_remove = set()
         stack = []
@@ -24,5 +23,5 @@ class Solution:
         return "".join(string_builder)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().minRemoveToMakeValid(s="lee(t(c)o)de)"))

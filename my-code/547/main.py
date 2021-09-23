@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         city_number = len(isConnected)
         index = 0

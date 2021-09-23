@@ -3,14 +3,12 @@
 # @Author   : Ranshi
 # @File     : main.py
 class ListNode:
-
-    def __init__(self, next: 'ListNode', val=0):
+    def __init__(self, next: "ListNode", val=0):
         self.val = val
         self.next = next
 
 
 class Solution:
-
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         new_head = ListNode(val=-1, next=head)
         fast, slow = new_head, new_head
@@ -24,5 +22,5 @@ class Solution:
         return new_head.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

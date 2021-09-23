@@ -8,15 +8,16 @@ from typing import List
 class Solution:
     def minPairSum(self, nums: List[int]) -> int:
         from collections import deque
+
         nums.sort()
         de = deque(nums)
-        _max = -float('inf')
+        _max = -float("inf")
         while de:
             x, y = de.popleft(), de.pop()
             _max = max(_max, x + y)
         return _max
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minPairSum(nums=[3, 5, 4, 2, 4, 6]))

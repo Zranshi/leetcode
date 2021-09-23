@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-
-    def combinationSum(self, candidates: List[int],
-                       target: int) -> List[List[int]]:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         candidates.sort()
         lst, res = [], []
 
@@ -29,5 +27,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().combinationSum(candidates=[2, 3, 6, 7], target=7))

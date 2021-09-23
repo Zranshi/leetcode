@@ -8,6 +8,7 @@ from typing import List
 class Solution:
     def restoreArray(self, adjacent_pairs: List[List[int]]) -> List[int]:
         from collections import defaultdict
+
         mapping, res, path = defaultdict(list), [], set()
         for item in adjacent_pairs:  # 构建哈希表
             mapping[item[0]].append(item[1])
@@ -26,5 +27,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().restoreArray(adjacent_pairs=[[2, 1], [3, 4], [3, 2]]))

@@ -84,6 +84,6 @@ class Solution:
         return i
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minimumTimeRequired(jobs=[3, 2, 3], k=3))

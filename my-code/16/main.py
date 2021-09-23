@@ -6,10 +6,9 @@ from typing import List
 
 
 class Solution:
-
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
-        res, diff = float('inf'), float('inf')
+        res, diff = float("inf"), float("inf")
         for i in range(0, len(nums) - 2):
             left, right = i + 1, len(nums) - 1
             while left < right:
@@ -26,6 +25,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.threeSumClosest(nums=[2, 1, -4], target=1))

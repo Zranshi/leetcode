@@ -10,7 +10,7 @@ class Solution:
     def swimInWater(self, grid: List[List[int]]) -> int:
         n = len(grid)
         que = deque([(0, 0)])
-        ans = [[float('inf')] * n for _ in range(n)]
+        ans = [[float("inf")] * n for _ in range(n)]
         ans[0][0] = grid[0][0]
         while que:
             x, y = que.popleft()
@@ -25,11 +25,16 @@ class Solution:
         return int(ans[-1][-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.swimInWater(
-        [[0, 1, 2, 3, 4],
-         [24, 23, 22, 21, 5],
-         [12, 13, 14, 15, 16],
-         [11, 17, 18, 19, 20],
-         [10, 9, 8, 7, 6]]))
+    print(
+        s.swimInWater(
+            [
+                [0, 1, 2, 3, 4],
+                [24, 23, 22, 21, 5],
+                [12, 13, 14, 15, 16],
+                [11, 17, 18, 19, 20],
+                [10, 9, 8, 7, 6],
+            ]
+        )
+    )

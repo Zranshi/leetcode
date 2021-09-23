@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def getMaximumGenerated(self, n: int) -> int:
         if n == 0:
             return 0
@@ -16,5 +15,5 @@ class Solution:
         return max(nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().getMaximumGenerated(n=7))

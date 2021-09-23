@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def findTheWinner(self, n, k):
         if n == 1:
             return 1
@@ -16,5 +15,5 @@ class Solution:
         return val + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().findTheWinner(n=5, k=2))

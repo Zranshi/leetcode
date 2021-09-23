@@ -23,5 +23,5 @@ class Solution:
         return [i for i in range(len(graph)) if safe(i)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().eventualSafeNodes(graph=[[1, 2], [2, 3], [5], [0], [5], [], []]))

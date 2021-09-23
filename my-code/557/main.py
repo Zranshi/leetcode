@@ -6,8 +6,8 @@
 
 class Solution:
     def reverseWords(self, s: str) -> str:
-        return ' '.join([item[::-1] for item in s.split(' ')])
+        return " ".join([item[::-1] for item in s.split(" ")])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().reverseWords("Let's take  LeetCode contest"))

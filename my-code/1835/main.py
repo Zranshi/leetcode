@@ -13,11 +13,11 @@ class Solution:
             cnt1 = sum(1 for num in arr1 if num & (1 << k))
             cnt2 = sum(1 for num in arr2 if num & (1 << k))
             if cnt1 % 2 == 1 and cnt2 % 2 == 1:
-                ans |= (1 << k)
+                ans |= 1 << k
 
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.getXORSum(arr1=[1, 2, 3], arr2=[6, 5]))

@@ -5,9 +5,9 @@
 
 
 class Solution:
-
     def countArrangement(self, n: int) -> int:
         from collections import defaultdict
+
         match = defaultdict(list)
         for i in range(1, n + 1):
             for j in range(1, n + 1):
@@ -33,5 +33,5 @@ class Solution:
         return num
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().countArrangement(2))

@@ -13,14 +13,14 @@ class Solution:
             if idx is None:
                 idx = list()
             if height == 0:
-                res.append(''.join(idx))
+                res.append("".join(idx))
             else:
                 if d == 0 or d < height:
-                    idx.append('(')
+                    idx.append("(")
                     dfs(d + 1, height - 1, idx)
                     idx.pop()
                 if d > 0:
-                    idx.append(')')
+                    idx.append(")")
                     dfs(d - 1, height - 1, idx)
                     idx.pop()
 
@@ -28,5 +28,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().generateParenthesis(n=3))

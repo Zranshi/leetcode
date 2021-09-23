@@ -6,8 +6,11 @@ from typing import List
 
 
 class Solution:
-    def numBusesToDestination(self, routes: List[List[int]], source: int, target: int) -> int:
+    def numBusesToDestination(
+        self, routes: List[List[int]], source: int, target: int
+    ) -> int:
         from collections import deque
+
         routes = {i: set(item) for i, item in enumerate(routes)}
         dq, path = deque(), set()
         dq.appendleft((source, 0))
@@ -26,6 +29,12 @@ class Solution:
         return res if dq else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.numBusesToDestination(routes=[[7, 12], [4, 5, 15], [6], [15, 19], [9, 12, 13]], source=15, target=12))
+    print(
+        s.numBusesToDestination(
+            routes=[[7, 12], [4, 5, 15], [6], [15, 19], [9, 12, 13]],
+            source=15,
+            target=12,
+        )
+    )

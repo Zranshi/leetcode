@@ -27,7 +27,7 @@ class KthLargest:
 # param_1 = obj.add(val)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = KthLargest(3, [4, 5, 8, 2])
     print(s.add(3))
     print(s.add(5))

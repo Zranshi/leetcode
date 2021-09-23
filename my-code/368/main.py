@@ -34,6 +34,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.largestDivisibleSubset(nums=[1, 2, 3, 4, 8]))

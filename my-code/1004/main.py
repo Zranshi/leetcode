@@ -16,6 +16,6 @@ class Solution:
         return right - left + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.longestOnes(A=[1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], K=2))

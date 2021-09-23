@@ -8,6 +8,7 @@ from typing import List
 class Solution:
     def countTriplets(self, arr: List[int]) -> int:
         from collections import Counter
+
         cnt, total = Counter(), Counter()
         ans, s = 0, 0
         for k, val in enumerate(arr):
@@ -19,6 +20,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.countTriplets(arr=[2, 3, 1, 6, 7]))

@@ -12,6 +12,7 @@ class TreeNode:
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         from collections import deque
+
         if not root:
             return 0
         de = deque()

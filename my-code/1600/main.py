@@ -6,7 +6,6 @@ from typing import List
 
 
 class ThroneInheritance:
-
     def __init__(self, king_name: str):
         self.idx_king = king_name
         self.root = {king_name: []}
@@ -35,20 +34,20 @@ class ThroneInheritance:
         return res
 
 
-if __name__ == '__main__':
-    t = ThroneInheritance('king')
+if __name__ == "__main__":
+    t = ThroneInheritance("king")
     t.getInheritanceOrder()
-    t.birth('king', 'andy')
+    t.birth("king", "andy")
     t.getInheritanceOrder()
-    t.birth('king', 'bob')
+    t.birth("king", "bob")
     t.getInheritanceOrder()
-    t.birth('king', 'catherine')
+    t.birth("king", "catherine")
     t.getInheritanceOrder()
-    t.birth('andy', 'matthew')
+    t.birth("andy", "matthew")
     t.getInheritanceOrder()
-    t.birth('bob', 'alex')
+    t.birth("bob", "alex")
     t.getInheritanceOrder()
-    t.birth('bob', 'asha')
+    t.birth("bob", "asha")
     t.getInheritanceOrder()
-    t.death('bob')
+    t.death("bob")
     t.getInheritanceOrder()

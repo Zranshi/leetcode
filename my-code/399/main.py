@@ -6,12 +6,11 @@ from typing import List
 
 
 class Solution:
-    def calcEquation(self,
-                     equations: List[List[str]],
-                     values: List[float],
-                     queries: List[List[str]]
-                     ) -> List[float]:
+    def calcEquation(
+        self, equations: List[List[str]], values: List[float], queries: List[List[str]]
+    ) -> List[float]:
         from collections import defaultdict
+
         # 创建图
         graph = defaultdict(dict)
         for (x, y), val in zip(equations, values):
@@ -44,8 +43,10 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.calcEquation(
-        equations=[["a", "b"], ["b", "c"]],
-        values=[2.0, 3.0],
-        queries=[["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]
-                 ]))
+    print(
+        s.calcEquation(
+            equations=[["a", "b"], ["b", "c"]],
+            values=[2.0, 3.0],
+            queries=[["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]],
+        )
+    )

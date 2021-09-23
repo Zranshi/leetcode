@@ -5,14 +5,14 @@
 from typing import List
 
 d = {
-    '2': 'abd',
-    '3': 'def',
-    '4': 'ghi',
-    '5': 'jkl',
-    '6': 'mno',
-    '7': 'pqrs',
-    '8': 'tuv',
-    '9': 'wxyz'
+    "2": "abd",
+    "3": "def",
+    "4": "ghi",
+    "5": "jkl",
+    "6": "mno",
+    "7": "pqrs",
+    "8": "tuv",
+    "9": "wxyz",
 }
 
 
@@ -27,7 +27,7 @@ class Solution:
 
         def dfs(idx: int):
             if idx == length:
-                res.append(''.join(target))
+                res.append("".join(target))
             else:
                 item = digits[idx]
                 for letter in d[item]:
@@ -39,6 +39,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.letterCombinations(digits="23"))

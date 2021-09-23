@@ -15,8 +15,10 @@ class Solution:
         return dp[m][n]
 
 
-if __name__ == '__main__':
-    print(Solution().longestCommonSubsequence(
-        text1="abcde",
-        text2="ace",
-    ))
+if __name__ == "__main__":
+    print(
+        Solution().longestCommonSubsequence(
+            text1="abcde",
+            text2="ace",
+        )
+    )

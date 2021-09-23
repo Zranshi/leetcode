@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def escapeGhosts(self, ghosts: List[List[int]], target: List[int]) -> bool:
         LENGTH = abs(target[0]) + abs(target[1])
         for ghost in ghosts:
@@ -17,8 +16,10 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
-    print(Solution().escapeGhosts(
-        ghosts=[[5, 0], [-10, -2], [0, -5], [-2, -2], [-7, 1]],
-        target=[7, 7],
-    ))
+if __name__ == "__main__":
+    print(
+        Solution().escapeGhosts(
+            ghosts=[[5, 0], [-10, -2], [0, -5], [-2, -2], [-7, 1]],
+            target=[7, 7],
+        )
+    )

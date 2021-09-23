@@ -8,7 +8,14 @@ from typing import List
 class Solution:
     def openLock(self, arr: List[str], target: str) -> int:
         from collections import deque
-        dq, path, error_state, res, target = deque(), {0}, set([int(item) for item in arr]), 0, int(target)
+
+        dq, path, error_state, res, target = (
+            deque(),
+            {0},
+            set([int(item) for item in arr]),
+            0,
+            int(target),
+        )
         dq.appendleft((0, 0))
 
         def next_state(n: int, mark: int, flag: int) -> int:
@@ -37,7 +44,6 @@ class Solution:
         return res if dq else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.openLock(["0201", "0101", "0102", "1212", "2002"]
-                     , "0202"))
+    print(s.openLock(["0201", "0101", "0102", "1212", "2002"], "0202"))

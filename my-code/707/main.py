@@ -5,14 +5,12 @@
 
 
 class ListNode:
-
     def __init__(self, x):
         self.val = x
         self.next, self.prev = None, None
 
 
 class MyLinkedList:
-
     def __init__(self):
         self.size = 0
         self.head, self.tail = ListNode(0), ListNode(0)

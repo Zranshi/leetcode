@@ -20,14 +20,17 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.checkIfPangram(
-        sentence='''uwzvsjguyglmikzwnqajbwkvgyxwbwljydeikgegcxigf
+    print(
+        s.checkIfPangram(
+            sentence="""uwzvsjguyglmikzwnqajbwkvgyxwbwljydeikgegcxigf
         dtvdbynglclgiyczpuoffemyoihxlkqohkhnkhwzgzfqodvioslmbigeiho
         ehlmanvuchzqjjwgbjtulvhkduhovwakbpvuwhuvmulcyfggnzybuqgbyaqufbzidptgdyuol
         qdjcvgsybaqayofaxvgndbkqnsttstsxyunbnmaidaemttvezqaplpoexpilhgwxqbfhnsjnzdollowjsw
         cxywajhawemnstuogzptessnqndastcsehtgtzhjethsbwvmxucjnegmxokffimduwjpsaocfns
         xvhqfksbiwmmabvobgjwozjylemnucebflymsuuilcipuzawmjlaaluphthkumlujkcmlawtoepyfujikt
         wggyfxhnlcxkzivgjnfewmbxmsspkpijpezkpnfbfwfxftkuuifhmvtlvbluhwcmhgywyfpljlawitl
-        gdgtb'''))
+        gdgtb"""
+        )
+    )

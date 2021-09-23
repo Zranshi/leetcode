@@ -22,6 +22,6 @@ class Solution:
         return int(res[n - 1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minCut(s="aab"))

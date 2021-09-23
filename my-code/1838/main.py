@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def maxFrequency(self, nums: List[int], k: int) -> int:
         nums.sort()
         le, res = 0, 0
@@ -24,6 +23,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxFrequency(nums=[3, 9, 6], k=2))

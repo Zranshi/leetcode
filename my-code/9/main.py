@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def isPalindrome(self, x: int) -> bool:
         str_x = str(x)
         re_x = str_x[::-1]
@@ -14,5 +13,5 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().isPalindrome(123321))

@@ -4,8 +4,9 @@
 # @File     : 面试题 02.04. 分割链表.py
 from typing import Optional
 
+
 class ListNode:
-    def __init__(self, val: int = 0, _next: Optional['ListNode'] = None):
+    def __init__(self, val: int = 0, _next: Optional["ListNode"] = None):
         self.val = val
         self.next = _next
 

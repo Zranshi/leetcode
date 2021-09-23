@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
         """
         输出DAG从0到n-1结点的所有可能路径.
@@ -35,5 +34,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().allPathsSourceTarget(graph=[[1, 2], [3], [3], []]))

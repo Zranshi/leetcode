@@ -12,7 +12,7 @@ class Solution:
             need[c] += 1
         needCnt = len(t)
         i = 0
-        res = (0, float('inf'))
+        res = (0, float("inf"))
         for j, c in enumerate(s):
             if need[c] > 0:
                 needCnt -= 1
@@ -30,7 +30,7 @@ class Solution:
                 needCnt += 1
                 i += 1
         # 如果res始终没被更新过，代表无满足条件的结果
-        return '' if res[1] > len(s) else s[res[0]:res[1] + 1]
+        return "" if res[1] > len(s) else s[res[0] : res[1] + 1]
 
 
 if __name__ == "__main__":

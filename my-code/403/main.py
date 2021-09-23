@@ -19,6 +19,6 @@ class Solution:
         return len(dp[stones[-1]]) > 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.canCross(stones=[0, 1, 3, 5, 6, 8, 12, 17]))

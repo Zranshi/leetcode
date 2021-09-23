@@ -13,7 +13,6 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.isToeplitzMatrix(
-        matrix=[[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]))
+    print(s.isToeplitzMatrix(matrix=[[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]))

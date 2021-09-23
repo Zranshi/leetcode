@@ -24,6 +24,6 @@ class Solution:
         return
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.merge(nums1=[0], m=0, nums2=[1], n=1))

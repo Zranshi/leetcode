@@ -17,5 +17,5 @@ class Solution:
         return []
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().twoSum(numbers=[2, 7, 11, 15], target=9))

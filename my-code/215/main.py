@@ -6,12 +6,12 @@ from typing import List
 
 
 class Solution:
-
     def findKthLargest_1(self, nums: List[int], k: int) -> int:
         return nums.sort(reverse=True)[k - 1]
 
     def findKthLargest_2(self, nums: List[int], k: int) -> int:
         import heapq
+
         heap = []
         for x in nums:
             heapq.heappush(heap, x)
@@ -21,6 +21,7 @@ class Solution:
 
     def findKthLargest(self, nums: List[int], k: int) -> int:
         import random
+
         random.shuffle(nums)
 
         def partition(nums, left, right):

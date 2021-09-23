@@ -5,14 +5,12 @@
 
 
 class ListNode:
-
-    def __init__(self, val=0, next: 'ListNode' = None):
+    def __init__(self, val=0, next: "ListNode" = None):
         self.val = val
         self.next = next
 
 
 class Solution:
-
     def swapPairs(self, head: ListNode) -> ListNode:
         new_head = ListNode(val=0, next=head)
         cur = new_head

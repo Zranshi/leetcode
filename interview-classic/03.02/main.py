@@ -5,7 +5,6 @@
 
 
 class MinStack:
-
     def __init__(self):
         self.stack = []
         self.min_stack = []
@@ -28,7 +27,7 @@ class MinStack:
         return self.min_stack[-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ms = MinStack()
     ms.push(0)
     ms.push(1)

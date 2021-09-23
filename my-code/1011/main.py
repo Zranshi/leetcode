@@ -29,6 +29,6 @@ class Solution:
         return left
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.shipWithinDays(weights=[1, 2, 3, 1, 1], D=4))

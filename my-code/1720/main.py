@@ -13,6 +13,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.decode(encoded=[1, 2, 3], first=1))

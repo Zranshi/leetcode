@@ -16,10 +16,11 @@ class Solution:
             seen = collections.defaultdict(int)
             for j in range(n):
                 # 同一个点：跳过
-                if points[i] == points[j]: continue
+                if points[i] == points[j]:
+                    continue
                 # 平行于y轴的直线
                 if points[j][0] == points[i][0]:
-                    k = float('inf')
+                    k = float("inf")
                 else:
                     # 计算斜率
                     k = (points[j][1] - points[i][1]) / (points[j][0] - points[i][0])
@@ -29,6 +30,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxPoints(points=[[1, 1], [3, 2], [5, 3], [4, 1], [2, 3], [1, 4]]))

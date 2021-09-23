@@ -7,15 +7,13 @@ from typing import List
 
 
 class Solution:
-    def findNumOfValidWords(
-            self, words: List[str],
-            puzzles: List[str]) -> List[int]:
+    def findNumOfValidWords(self, words: List[str], puzzles: List[str]) -> List[int]:
         frequency = collections.Counter()
 
         for word in words:
             mask = 0
             for ch in word:
-                mask |= (1 << (ord(ch) - ord("a")))
+                mask |= 1 << (ord(ch) - ord("a"))
             if str(mask).count("1") <= 7:
                 frequency[mask] += 1
 
@@ -36,7 +34,7 @@ class Solution:
             # 枚举子集方法二
             mask = 0
             for i in range(1, 7):
-                mask |= (1 << (ord(puzzle[i]) - ord("a")))
+                mask |= 1 << (ord(puzzle[i]) - ord("a"))
 
             subset = mask
             while subset:
@@ -55,9 +53,11 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.findNumOfValidWords(
-        words=["aaaa", "asas", "able", "ability", "actt", "actor", "access"],
-        puzzles=["aboveyz", "abrodyz", "abslute", "absoryz",
-                 "actresz", "gaswxyz"]))
+    print(
+        s.findNumOfValidWords(
+            words=["aaaa", "asas", "able", "ability", "actt", "actor", "access"],
+            puzzles=["aboveyz", "abrodyz", "abslute", "absoryz", "actresz", "gaswxyz"],
+        )
+    )

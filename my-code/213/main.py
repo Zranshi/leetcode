@@ -23,6 +23,6 @@ class Solution:
             return max(robRange(0, length - 2), robRange(1, length - 1))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.rob(nums=[6, 6, 4, 8, 4, 3, 3, 10]))

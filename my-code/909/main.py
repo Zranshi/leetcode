@@ -8,6 +8,7 @@ from typing import List
 class Solution:
     def snakesAndLadders(self, board: List[List[int]]) -> int:
         from collections import deque
+
         n, idx_path = len(board), 0
         send, path, dq = {}, {}, deque()
         for i in range(n * n):
@@ -30,8 +31,16 @@ class Solution:
         return idx_path if dq else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.snakesAndLadders(
-        [[-1, -1, 19, 10, -1], [2, -1, -1, 6, -1], [-1, 17, -1, 19, -1], [25, -1, 20, -1, -1], [-1, -1, -1, -1, 15]]
-    ))
+    print(
+        s.snakesAndLadders(
+            [
+                [-1, -1, 19, 10, -1],
+                [2, -1, -1, 6, -1],
+                [-1, 17, -1, 19, -1],
+                [25, -1, 20, -1, -1],
+                [-1, -1, -1, -1, 15],
+            ]
+        )
+    )

@@ -7,9 +7,9 @@ t = int(input())
 for _ in range(t):
     usr = input()
     if not usr[0].isalpha() or not usr.isalnum():
-        print('Wrong')
+        print("Wrong")
     else:
         if not usr.isalpha() and not usr.isdigit():
-            print('Accept')
+            print("Accept")
         else:
-            print('Wrong')
+            print("Wrong")

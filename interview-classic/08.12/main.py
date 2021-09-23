@@ -6,7 +6,6 @@ from typing import List
 
 
 class Solution:
-
     def solveNQueens(self, n: int) -> List[List[str]]:
         def generate_board():
             board = list()
@@ -22,8 +21,7 @@ class Solution:
                 res.append(board)
             else:
                 for i in range(n):
-                    if i in columns or row - i in diagonal1 or row + i in \
-                            diagonal2:
+                    if i in columns or row - i in diagonal1 or row + i in diagonal2:
                         continue
                     queens[row] = i
                     columns.add(i)
@@ -44,5 +42,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().solveNQueens(n=4))

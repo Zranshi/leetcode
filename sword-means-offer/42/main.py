@@ -14,6 +14,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxSubArray(nums=[-2, 1, -3, 4, -1, 2, 1, -5, 4]))

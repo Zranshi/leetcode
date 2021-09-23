@@ -12,7 +12,7 @@ class TreeNode:
 class Solution:
     def findSecondMinimumValue(self, root: TreeNode) -> int:
         _min: int = root.val
-        res = float('inf')
+        res = float("inf")
         stk = [root]
         while stk:
             idx = stk.pop()
@@ -21,4 +21,4 @@ class Solution:
             if idx.left and idx.right:
                 stk.append(idx.right)
                 stk.append(idx.left)
-        return res if res!=float('inf') else -1
+        return res if res != float("inf") else -1

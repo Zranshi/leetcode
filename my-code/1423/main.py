@@ -16,6 +16,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxScore(cardPoints=[1, 2, 3, 4, 5, 6, 1], k=3))

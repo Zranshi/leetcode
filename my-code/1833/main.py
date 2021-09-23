@@ -18,6 +18,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxIceCream(costs=[1, 3, 2, 4, 1], coins=7))

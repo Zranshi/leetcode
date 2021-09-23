@@ -2,7 +2,12 @@ from typing import Dict, List, Optional, Set
 
 
 class TreeNode:
-    def __init__(self, x: int = 0, left: Optional['TreeNode'] = None, right: Optional['TreeNode'] = None):
+    def __init__(
+        self,
+        x: int = 0,
+        left: Optional["TreeNode"] = None,
+        right: Optional["TreeNode"] = None,
+    ):
         self.val = x
         self.left = left
         self.right = right
@@ -29,11 +34,12 @@ class Solution:
                 res.append(idx.val)
             else:
                 if idx.left and idx.left not in path:
-                    dfs(idx.left, distance+1)
+                    dfs(idx.left, distance + 1)
                 if idx.right and idx.right not in path:
-                    dfs(idx.right, distance+1)
+                    dfs(idx.right, distance + 1)
                 father = father_node_map[idx]
                 if father and father not in path:
-                    dfs(father, distance+1)
+                    dfs(father, distance + 1)
+
         dfs(target, 0)
         return res

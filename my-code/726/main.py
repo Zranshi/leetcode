@@ -7,6 +7,7 @@
 class Solution:
     def countOfAtoms(self, formula: str) -> str:
         from sortedcontainers import SortedDict
+
         n = len(formula)
         name_cnt_depth = []  # 名字-频率-括号深度
         DEPTH = 0  # 每到一处，左括号的个数就是当前name的深度
@@ -17,11 +18,11 @@ class Solution:
             if formula[i].isupper():  # 大写字母开头
                 name += formula[i]
                 i += 1
-            if name != '':  # 后面跟着小写字母
+            if name != "":  # 后面跟着小写字母
                 while i < n and formula[i].islower():
                     name += formula[i]
                     i += 1
-            if name != '':  # 有名字！！！！！！
+            if name != "":  # 有名字！！！！！！
                 # ------------------------------（2）这个名字的次数
                 cnt = 0
                 # ----如果name后面有数字
@@ -35,10 +36,10 @@ class Solution:
                     name_cnt_depth.append([name, 1, DEPTH])
 
             # --------------------------------（3）括号的情况
-            if i < n and formula[i] == '(':
+            if i < n and formula[i] == "(":
                 DEPTH += 1
                 i += 1
-            elif i < n and formula[i] == ')':
+            elif i < n and formula[i] == ")":
                 i += 1
                 cnt = 0
                 # ----------后面有数字

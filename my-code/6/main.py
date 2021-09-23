@@ -21,9 +21,9 @@ class Solution:
         res = []
         for item in _map:
             res.extend(item)
-        return ''.join(res)
+        return "".join(res)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.convert("ABC", 1))

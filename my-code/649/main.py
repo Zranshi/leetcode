@@ -5,12 +5,13 @@
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
         import collections
+
         n = len(senate)
         radiant = collections.deque()
         dire = collections.deque()
 
         for i, ch in enumerate(senate):
-            if ch == 'R':
+            if ch == "R":
                 radiant.append(i)
             else:
                 dire.append(i)

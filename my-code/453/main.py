@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def minMoves(self, nums: List[int]) -> int:
         _min = nums[0]
         res = 0
@@ -18,5 +17,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().minMoves([1, 2, 3]))

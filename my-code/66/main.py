@@ -18,6 +18,6 @@ class Solution:
         return digits
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.plusOne(digits=[8, 9, 9, 9]))

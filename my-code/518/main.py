@@ -16,6 +16,6 @@ class Solution:
         return dp[-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.change(amount=10, coins=[10]))

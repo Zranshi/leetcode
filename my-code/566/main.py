@@ -6,8 +6,7 @@ from typing import List
 
 
 class Solution:
-    def matrixReshape(self, nums: List[List[int]], r: int,
-                      c: int) -> List[List[int]]:
+    def matrixReshape(self, nums: List[List[int]], r: int, c: int) -> List[List[int]]:
         m, n = len(nums), len(nums[0])
         if m * n != r * c:
             return nums
@@ -17,6 +16,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.matrixReshape(nums=[[1, 2], [3, 4], [4, 6], [4, 8]], r=2, c=4))

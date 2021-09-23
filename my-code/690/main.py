@@ -13,8 +13,9 @@ class Employee:
 
 
 class Solution:
-    def getImportance(self, employees: List['Employee'], targetId: int) -> int:
+    def getImportance(self, employees: List["Employee"], targetId: int) -> int:
         for item in employees:
             if item.id == targetId:
-                return item.importance + sum([self.getImportance(employees, i)
-                                              for i in item.subordinates])
+                return item.importance + sum(
+                    [self.getImportance(employees, i) for i in item.subordinates]
+                )

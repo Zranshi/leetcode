@@ -20,10 +20,10 @@ class Solution:
                 pre, length = ch, 1
         res.append(str(pre))
         res.append(str(length))
-        ans = ''.join(res)
+        ans = "".join(res)
         return ans if len(ans) < len(string) else string
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.compressString("abbccccccccd"))

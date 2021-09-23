@@ -7,23 +7,24 @@ class Solution:
         cnt = [0 for i in range(26)]
         maxs = 0
         for i in S:
-            cnt[ord(i) - ord('a')] += 1
-            maxs = max(maxs, cnt[ord(i) - ord('a')])
+            cnt[ord(i) - ord("a")] += 1
+            maxs = max(maxs, cnt[ord(i) - ord("a")])
         if maxs > (len(S) + 1) // 2:
-            return ''
+            return ""
         import heapq
+
         heap = []
-        ans = ''
+        ans = ""
         for i in range(26):
             if cnt[i] != 0:
                 heapq.heappush(heap, [-cnt[i], i])
         while len(heap):
             cnts1, idx1 = heapq.heappop(heap)
-            ans = ans + chr(idx1 + ord('a'))
+            ans = ans + chr(idx1 + ord("a"))
             if len(heap) == 0:
                 break
             cnts2, idx2 = heapq.heappop(heap)
-            ans = ans + chr(idx2 + ord('a'))
+            ans = ans + chr(idx2 + ord("a"))
             if cnts1 + 1 != 0:
                 heapq.heappush(heap, [cnts1 + 1, idx1])
             if cnts2 + 1 != 0:

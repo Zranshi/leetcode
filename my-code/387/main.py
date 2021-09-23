@@ -3,9 +3,9 @@
 # @Author   : Ranshi
 # @File     : 387. 字符串中的第一个唯一字符.py
 class Solution:
-
     def firstUniqChar(self, s: str) -> int:
         from collections import Counter
+
         c = Counter(s)
         for i in range(len(s)):
             if c[s[i]] == 1:

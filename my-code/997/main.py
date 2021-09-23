@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
         a = []
         for i in range(n):
@@ -25,5 +24,5 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().findJudge(n=2, trust=[[1, 2]]))

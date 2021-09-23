@@ -11,6 +11,6 @@ class Solution:
         return sum(nums[::2])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.arrayPairSum(nums=[6, 2, 6, 5, 1, 2]))

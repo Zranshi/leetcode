@@ -3,7 +3,6 @@
 # @Author   : Ranshi
 # @File     : 面试题 03.03. 堆盘子.py
 class StackOfPlates:
-
     def __init__(self, cap: int):
         self.cap = cap
         self.stacks = []

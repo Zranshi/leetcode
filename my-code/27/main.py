@@ -15,6 +15,6 @@ class Solution:
         return idx
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.removeElement(nums=[0, 1, 2, 2, 3, 0, 4, 2], val=2))

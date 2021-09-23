@@ -3,8 +3,6 @@
 # @Author   : Ranshi
 # @File     : listNode.py
 # @Doc      : ListNode类
-
-
 from typing import Optional
 
 

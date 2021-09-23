@@ -5,9 +5,8 @@
 
 
 class Solution:
-
     def checkRecord(self, n: int) -> int:
-        MOD = 10**9 + 7
+        MOD = 10 ** 9 + 7
         # A 的数量，结尾连续 L 的数量
         dp = [[0, 0, 0], [0, 0, 0]]
         dp[0][0] = 1
@@ -39,5 +38,5 @@ class Solution:
         return total % MOD
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().checkRecord(n=5))

@@ -20,6 +20,6 @@ class Solution:
         return dp[m][n]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxUncrossedLines(nums1=[1, 4, 2], nums2=[1, 2, 4]))

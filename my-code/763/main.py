@@ -11,7 +11,7 @@ class Solution:
         res = []
         ch_range = [[] for _ in range(26)]
         for i in range(len(s)):
-            idx = ord(s[i]) - ord('a')
+            idx = ord(s[i]) - ord("a")
             if not ch_range[idx]:
                 ch_range[idx] = [i, i]
             else:
@@ -29,5 +29,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().partitionLabels("ababcbacadefegdehijhklij"))

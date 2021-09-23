@@ -11,17 +11,22 @@ class Solution:
         res = []
         left, length = 0, len(nums)
         while left + k <= length:
-            _list = sorted(nums[left:left + k])
+            _list = sorted(nums[left : left + k])
             res.append(
-                _list[len(_list) // 2] if len(_list) % 2 else (
-                                                                      _list[len(_list) // 2 - 1] + _list[
-                                                                  len(_list) // 2]) / 2)
+                _list[len(_list) // 2]
+                if len(_list) % 2
+                else (_list[len(_list) // 2 - 1] + _list[len(_list) // 2]) / 2
+            )
             left += 1
         return res
 
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
-        def median(a): return a[len(a) // 2] if len(a) % 2 else (
-                                                                        a[len(a) // 2 - 1] + a[len(a) // 2]) / 2
+        def median(a):
+            return (
+                a[len(a) // 2]
+                if len(a) % 2
+                else (a[len(a) // 2 - 1] + a[len(a) // 2]) / 2
+            )
 
         a = sorted(nums[:k])
         res = [median(a)]
@@ -32,6 +37,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.medianSlidingWindow(nums=[1, 3, -1, -3, 5, 3, 6, 7], k=3))

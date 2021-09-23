@@ -6,7 +6,6 @@ from collections import Counter
 
 
 class Solution:
-
     def checkInclusion(self, s1: str, s2: str) -> bool:
         s1_length, s2_length = len(s1), len(s2)
         s2 = s2 + "0"
@@ -27,6 +26,6 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.checkInclusion("ab", "eidboaoo"))

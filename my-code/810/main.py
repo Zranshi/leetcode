@@ -15,6 +15,6 @@ class Solution:
         return xor_sum == 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.xorGame(nums=[1, 1, 2]))

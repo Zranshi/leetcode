@@ -10,6 +10,6 @@ class Solution:
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.getBiggestThree(grid=[[7, 7, 7]]))

@@ -6,13 +6,15 @@ from typing import Optional
 
 
 class ListNode:
-    def __init__(self, val: int = 0, _next: Optional['ListNode'] = None):
+    def __init__(self, val: int = 0, _next: Optional["ListNode"] = None):
         self.val = val
         self.next = _next
 
 
 class Solution:
-    def getIntersectionNode(self, head_a: ListNode, head_b: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, head_a: ListNode, head_b: ListNode
+    ) -> Optional[ListNode]:
         a, b = head_a, head_b
         while a != b:
             if not a:

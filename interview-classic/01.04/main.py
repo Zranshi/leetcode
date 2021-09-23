@@ -5,6 +5,7 @@
 class Solution:
     def canPermutePalindrome(self, s: str) -> bool:
         from collections import Counter
+
         c = Counter(s)
         oi = 0
         for key in c:
@@ -15,6 +16,6 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.canPermutePalindrome("tactcoa"))

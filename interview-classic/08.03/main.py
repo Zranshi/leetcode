@@ -13,6 +13,6 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findMagicIndex(nums=[1, 2, 3, 4, 5]))

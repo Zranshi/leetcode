@@ -7,18 +7,13 @@ from typing import List
 
 
 class TreeNode:
-
-    def __init__(self,
-                 val=0,
-                 left: 'TreeNode' = None,
-                 right: 'TreeNode' = None):
+    def __init__(self, val=0, left: "TreeNode" = None, right: "TreeNode" = None):
         self.val = val
         self.left = left
         self.right = right
 
 
 class Solution:
-
     def rightSideView(self, root: TreeNode) -> List[int]:
         rightmost_value_at_depth = {}  # 深度为索引，存放节点的值
         max_depth = -1
@@ -37,10 +32,8 @@ class Solution:
                 stack.append((node.left, depth + 1))
                 stack.append((node.right, depth + 1))
 
-        return [
-            rightmost_value_at_depth[depth] for depth in range(max_depth + 1)
-        ]
+        return [rightmost_value_at_depth[depth] for depth in range(max_depth + 1)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

@@ -12,7 +12,7 @@ class Solution:
         if n <= L:
             return []
         a, aL = 4, pow(4, L)
-        to_int = {'A': 0, 'C': 1, 'G': 2, 'T': 3}
+        to_int = {"A": 0, "C": 1, "G": 2, "T": 3}
         nums = [to_int.get(s[i]) for i in range(n)]
 
         h = 0
@@ -24,10 +24,10 @@ class Solution:
                 for i in range(L):
                     h = h * a + nums[i]
             if h in seen:
-                output.add(s[start:start + L])
+                output.add(s[start : start + L])
             seen.add(h)
         return list(output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().findRepeatedDnaSequences(s="AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))

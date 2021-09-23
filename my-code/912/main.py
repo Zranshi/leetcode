@@ -21,13 +21,13 @@ class Solution:
             else:
                 tmp.append(nums[i])
                 i += 1
-        nums[low: high + 1] = tmp
+        nums[low : high + 1] = tmp
 
     def sortArray(self, nums: List[int]) -> List[int]:
         self.merge_sort(nums, 0, len(nums) - 1)
         return nums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.sortArray(nums=[5, 2, 3, 1]))

@@ -5,11 +5,12 @@
 class Solution:
     def countGoodSubstrings(self, s: str) -> int:
         from collections import Counter
+
         length = len(s)
         res = 0
         for right in range(3, length + 1):
             flag = True
-            c = Counter(s[right - 3:right])
+            c = Counter(s[right - 3 : right])
             for item in c.values():
                 if item != 1:
                     flag = False
@@ -19,6 +20,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.countGoodSubstrings(s="xyzzaz"))

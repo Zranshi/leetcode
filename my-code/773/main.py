@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 
 class Solution:
-    move_map = {'LEFT': 1, 'RIGHT': -1, 'UP': 3, 'DOWN': -3}
+    move_map = {"LEFT": 1, "RIGHT": -1, "UP": 3, "DOWN": -3}
 
     def slidingPuzzle(self, board: List[List[int]]) -> int:
         from collections import deque
@@ -47,6 +47,6 @@ class Solution:
         return path if dq else -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.slidingPuzzle([[3, 2, 4], [1, 5, 0]]))

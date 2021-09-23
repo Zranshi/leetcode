@@ -7,7 +7,6 @@ from typing import List, Optional
 
 
 class TreeNode:
-
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -15,13 +14,13 @@ class TreeNode:
 
 
 class Solution:
-
-    def buildTree(self, preorder: List[int],
-                  inorder: List[int]) -> Optional[TreeNode]:
-
-        def myBuildTree(preorder_left: int, preorder_right: int,
-                        inorder_left: int,
-                        inorder_right: int) -> Optional[TreeNode]:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        def myBuildTree(
+            preorder_left: int,
+            preorder_right: int,
+            inorder_left: int,
+            inorder_right: int,
+        ) -> Optional[TreeNode]:
             if preorder_left > preorder_right:
                 return None
 
@@ -36,14 +35,20 @@ class Solution:
             size_left_subtree = inorder_root - inorder_left
             # 递归地构造左子树，并连接到根节点
             # 先序遍历中「从 左边界+1 开始的 size_left_subtree」个元素就对应了中序遍历中「从 左边界 开始到 根节点定位-1」的元素
-            root.left = myBuildTree(preorder_left + 1,
-                                    preorder_left + size_left_subtree,
-                                    inorder_left, inorder_root - 1)
+            root.left = myBuildTree(
+                preorder_left + 1,
+                preorder_left + size_left_subtree,
+                inorder_left,
+                inorder_root - 1,
+            )
             # 递归地构造右子树，并连接到根节点
             # 先序遍历中「从 左边界+1+左子树节点数目 开始到 右边界」的元素就对应了中序遍历中「从 根节点定位+1 到 右边界」的元素
-            root.right = myBuildTree(preorder_left + size_left_subtree + 1,
-                                     preorder_right, inorder_root + 1,
-                                     inorder_right)
+            root.right = myBuildTree(
+                preorder_left + size_left_subtree + 1,
+                preorder_right,
+                inorder_root + 1,
+                inorder_right,
+            )
             return root
 
         n = len(preorder)
@@ -52,8 +57,10 @@ class Solution:
         return myBuildTree(0, n - 1, 0, n - 1)
 
 
-if __name__ == '__main__':
-    print(Solution().buildTree(
-        preorder=[3, 9, 20, 15, 7],
-        inorder=[9, 3, 15, 20, 7],
-    ))
+if __name__ == "__main__":
+    print(
+        Solution().buildTree(
+            preorder=[3, 9, 20, 15, 7],
+            inorder=[9, 3, 15, 20, 7],
+        )
+    )

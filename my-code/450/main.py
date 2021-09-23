@@ -7,7 +7,6 @@ from typing import Optional
 
 
 class TreeNode:
-
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -15,7 +14,6 @@ class TreeNode:
 
 
 class Solution:
-
     def successor(self, root):
         """
         One step right and then always left
@@ -34,8 +32,7 @@ class Solution:
             root = root.right
         return root.val
 
-    def deleteNode(self, root: Optional[TreeNode],
-                   key: int) -> Optional[TreeNode]:
+    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         if not root:
             return None
 
@@ -62,5 +59,5 @@ class Solution:
         return root
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

@@ -5,10 +5,9 @@
 
 
 class Solution:
-
     def compareVersion(self, version1: str, version2: str) -> int:
-        v1 = [int(item) for item in version1.split('.')]
-        v2 = [int(item) for item in version2.split('.')]
+        v1 = [int(item) for item in version1.split(".")]
+        v2 = [int(item) for item in version2.split(".")]
         idx = 0
         while idx < len(v1) or idx < len(v2):
             idx_v1, idx_v2 = 0, 0
@@ -23,5 +22,5 @@ class Solution:
         return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().compareVersion(version1="1.0.1", version2="1"))

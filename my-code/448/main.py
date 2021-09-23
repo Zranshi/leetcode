@@ -11,6 +11,6 @@ class Solution:
         return [i for i in range(1, len(nums) + 1) if i not in c]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findDisappearedNumbers([1, 1]))

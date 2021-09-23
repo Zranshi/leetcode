@@ -7,7 +7,7 @@ from typing import List
 
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
-        idx, res, pre = 0, 0, float('-inf')
+        idx, res, pre = 0, 0, float("-inf")
         for x in nums:
             if x > pre:
                 idx += 1
@@ -19,6 +19,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.findLengthOfLCIS(nums=[2, 2, 2, 2, 2]))

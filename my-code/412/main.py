@@ -10,16 +10,16 @@ class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         res = []
         for i in range(1, n + 1):
-            idx = ''
+            idx = ""
             if i % 3 == 0:
-                idx += 'Fizz'
+                idx += "Fizz"
             if i % 5 == 0:
-                idx += 'Buzz'
+                idx += "Buzz"
             elif i % 3 != 0:
                 idx += str(i)
             res.append(idx)
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().fizzBuzz(50))

@@ -38,8 +38,8 @@ class Solution:
         import re
 
         def f(s):
-            while '#' in s:
-                s = re.sub('(?:^|[^#])#', '', s)
+            while "#" in s:
+                s = re.sub("(?:^|[^#])#", "", s)
             return s
 
         return f(S) == f(T)

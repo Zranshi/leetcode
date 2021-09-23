@@ -16,8 +16,8 @@ class Solution:
                 res.append(paths[:])
                 return
             for i in range(len(lastStr)):
-                first = lastStr[:i + 1]
-                last = lastStr[i + 1:]
+                first = lastStr[: i + 1]
+                last = lastStr[i + 1 :]
                 if not self.isPalindrome(first):
                     continue
                 paths.append(first)
@@ -37,6 +37,6 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.partition("aab"))

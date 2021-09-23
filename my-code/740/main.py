@@ -19,6 +19,6 @@ class Solution:
         return second
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.deleteAndEarn(nums=[2, 2, 3, 3, 3, 4]))

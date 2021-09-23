@@ -18,20 +18,29 @@ class Solution:
             else:
                 menu[table_num][item[2]] += 1
         foods, table_l = sorted(list(foods)), sorted(menu.keys())
-        res = [['Table'] + foods]
+        res = [["Table"] + foods]
         for key in table_l:
             idx = [str(key)]
             for item in foods:
                 if item in menu[key]:
                     idx.append(str(menu[key][item]))
                 else:
-                    idx.append('0')
+                    idx.append("0")
             res.append(idx)
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.displayTable(
-        orders=[["David", "3", "Ceviche"], ["Corina", "10", "Beef Burrito"], ["David", "3", "Fried Chicken"],
-                ["Carla", "5", "Water"], ["Carla", "5", "Ceviche"], ["Rous", "3", "Ceviche"]]))
+    print(
+        s.displayTable(
+            orders=[
+                ["David", "3", "Ceviche"],
+                ["Corina", "10", "Beef Burrito"],
+                ["David", "3", "Fried Chicken"],
+                ["Carla", "5", "Water"],
+                ["Carla", "5", "Ceviche"],
+                ["Rous", "3", "Ceviche"],
+            ]
+        )
+    )

@@ -22,6 +22,6 @@ class Solution:
         return ret
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.longestSubarray(nums=[10, 1, 2, 4, 7, 2], limit=5))

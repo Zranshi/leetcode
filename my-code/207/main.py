@@ -14,6 +14,7 @@ class Solution:
         :return:
         """
         from collections import deque
+
         de = deque()
         solve = []
         rely = [0 for _ in range(num_courses)]
@@ -35,6 +36,6 @@ class Solution:
         return len(solve) == num_courses
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.canFinish(num_courses=2, prerequisites=[[1, 0]]))

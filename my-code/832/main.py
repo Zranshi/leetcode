@@ -10,6 +10,6 @@ class Solution:
         return [[j ^ 1 for j in item[::-1]] for item in A]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.flipAndInvertImage([[1, 1, 0], [1, 0, 1], [0, 0, 0]]))

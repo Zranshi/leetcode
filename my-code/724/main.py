@@ -19,6 +19,6 @@ class Solution:
         return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.pivotIndex(nums=[-1, -1, -1, -1, -1, -1]))

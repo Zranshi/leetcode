@@ -10,7 +10,7 @@ class Solution:
 
         def dfs(arr, le: int, ri: int):
             if le >= ri:
-                res.append(''.join(arr))
+                res.append("".join(arr))
             else:
                 i = le
                 for num in range(le, ri):
@@ -22,5 +22,5 @@ class Solution:
         return list(set(res))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().permutation("qqe"))

@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
         n, num, vis = len(rooms), 0, set()
 
@@ -23,5 +22,5 @@ class Solution:
         return num == n
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().canVisitAllRooms([[1], [2], [3], []]))

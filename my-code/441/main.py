@@ -5,7 +5,6 @@
 
 
 class Solution:
-
     def arrangeCoins(self, n: int) -> int:
         le, ri = 1, n
         while le < ri:
@@ -19,5 +18,5 @@ class Solution:
         return le
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().arrangeCoins(n=5))

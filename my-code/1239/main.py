@@ -11,7 +11,7 @@ class Solution:
         for s in arr:
             mask = 0
             for ch in s:
-                idx = ord(ch) - ord('a')
+                idx = ord(ch) - ord("a")
                 if (mask >> idx) & 1:
                     mask = 0
                     break
@@ -33,6 +33,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.maxLength(arr=["un", "iq", "ue"]))

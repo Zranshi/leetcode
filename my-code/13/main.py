@@ -4,7 +4,7 @@
 # @File     : 13. 罗马数字转整数.py
 class Solution:
     def romanToInt(self, s):
-        a = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+        a = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         ans = 0
         for i in range(len(s)):
             if i < len(s) - 1 and a[s[i]] < a[s[i + 1]]:
@@ -14,6 +14,6 @@ class Solution:
         return ans
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.romanToInt("MCMXCIV"))

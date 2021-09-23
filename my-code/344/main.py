@@ -11,7 +11,7 @@ class Solution:
             s[i], s[-(i + 1)] = s[-(i + 1)], s[i]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = ["h", "e", "l", "l", "o"]
     print(Solution().reverseString(s))
     print(s)

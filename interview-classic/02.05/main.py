@@ -6,13 +6,15 @@ from typing import Optional
 
 
 class ListNode:
-    def __init__(self, x: int, _next: Optional['ListNode'] = None):
+    def __init__(self, x: int, _next: Optional["ListNode"] = None):
         self.val = x
         self.next = _next
 
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         head = ListNode(-1)
         p = head
         carry = 0

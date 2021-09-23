@@ -7,8 +7,9 @@ from typing import List
 
 
 class Solution:
-    def unhappyFriends(self, n: int, preferences: List[List[int]],
-                       pairs: List[List[int]]) -> int:
+    def unhappyFriends(
+        self, n: int, preferences: List[List[int]], pairs: List[List[int]]
+    ) -> int:
         f_ships = [[-1] * n for _ in range(n)]
         for idx, v in enumerate(preferences):
             for i in range(len(v)):
@@ -30,17 +31,19 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
-    print(Solution().unhappyFriends(
-        n=4,
-        preferences=[
-            [1, 2, 3],
-            [3, 2, 0],
-            [3, 1, 0],
-            [1, 2, 0],
-        ],
-        pairs=[
-            [0, 1],
-            [2, 3],
-        ],
-    ))
+if __name__ == "__main__":
+    print(
+        Solution().unhappyFriends(
+            n=4,
+            preferences=[
+                [1, 2, 3],
+                [3, 2, 0],
+                [3, 1, 0],
+                [1, 2, 0],
+            ],
+            pairs=[
+                [0, 1],
+                [2, 3],
+            ],
+        )
+    )

@@ -11,6 +11,6 @@ class Solution:
         return reduce(lambda x, y: x ^ y, nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.singleNumber([2, 2, 1]))

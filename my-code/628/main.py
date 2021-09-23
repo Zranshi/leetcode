@@ -13,8 +13,8 @@ class Solution:
         return max(a, b)
 
     def maximumProduct(self, nums: List[int]) -> int:
-        a = b = c = float('-inf')
-        d = e = float('inf')
+        a = b = c = float("-inf")
+        d = e = float("inf")
         for i, num in enumerate(nums):
             # 更新最大三个数
             if num > a:

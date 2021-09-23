@@ -23,5 +23,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().intersect(nums1=[4, 9, 5], nums2=[9, 4, 9, 8, 4]))

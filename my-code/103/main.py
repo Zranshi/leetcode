@@ -7,7 +7,6 @@ from typing import List
 
 
 class TreeNode:
-
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -15,9 +14,9 @@ class TreeNode:
 
 
 class Solution:
-
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         from collections import deque
+
         if not root:
             return []
         result = []
@@ -41,5 +40,5 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ...

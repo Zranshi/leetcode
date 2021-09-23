@@ -34,6 +34,6 @@ class Solution:
         return low
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.minDays(bloomDay=[1, 10, 3, 10, 2], m=3, k=1))

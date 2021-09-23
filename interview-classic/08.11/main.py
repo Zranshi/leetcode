@@ -14,5 +14,5 @@ class Solution:
         return f[n] % mod
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().waysToChange(10))

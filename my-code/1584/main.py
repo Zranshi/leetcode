@@ -33,8 +33,7 @@ class DisjointSetUnion:
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         def dist(x, y):
-            return abs(
-                points[x][0] - points[y][0]) + abs(points[x][1] - points[y][1])
+            return abs(points[x][0] - points[y][0]) + abs(points[x][1] - points[y][1])
 
         n = len(points)
         dsu = DisjointSetUnion(n)
@@ -56,7 +55,6 @@ class Solution:
         return ret
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
-    print(s.minCostConnectPoints(
-        points=[[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]))
+    print(s.minCostConnectPoints(points=[[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]))

@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-
-    def corpFlightBookings(self, bookings: List[List[int]],
-                           n: int) -> List[int]:
+    def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
         diff, plants = [0 for _ in range(n + 2)], [0 for _ in range(n)]
         for v in bookings:
             diff[v[0]] += v[2]
@@ -20,12 +18,14 @@ class Solution:
         return plants
 
 
-if __name__ == '__main__':
-    print(Solution().corpFlightBookings(
-        bookings=[
-            [1, 2, 10],
-            [2, 3, 20],
-            [2, 5, 25],
-        ],
-        n=5,
-    ))
+if __name__ == "__main__":
+    print(
+        Solution().corpFlightBookings(
+            bookings=[
+                [1, 2, 10],
+                [2, 3, 20],
+                [2, 5, 25],
+            ],
+            n=5,
+        )
+    )

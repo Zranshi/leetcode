@@ -23,6 +23,6 @@ class Solution:
         return dp[0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.numWays(steps=4, arrLen=3))

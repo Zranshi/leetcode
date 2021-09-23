@@ -10,7 +10,6 @@ class TreeNode:
 
 
 class BSTIterator:
-
     def __init__(self, root: TreeNode):
         self.queue = []
         self.idx = 0

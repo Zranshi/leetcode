@@ -7,7 +7,6 @@ from typing import List
 
 
 class Solution:
-
     def numRescueBoats(self, people: List[int], limit: int) -> int:
         people.sort()
         res = 0
@@ -21,5 +20,5 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Solution().numRescueBoats(people=[3, 2, 2, 1], limit=3))

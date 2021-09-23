@@ -3,6 +3,7 @@
 # @Author   : Ranshi
 # @File     : main.py
 
+
 class Solution:
     def permutation(self, chs: str):
         begin, end = 0, len(chs)
@@ -11,7 +12,7 @@ class Solution:
 
         def dfs(arr, le: int, ri: int):
             if le >= ri:
-                res.append(''.join(arr))
+                res.append("".join(arr))
             else:
                 i = le
                 for num in range(le, ri):
@@ -23,6 +24,6 @@ class Solution:
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.permutation("qwe"))

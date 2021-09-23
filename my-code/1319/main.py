@@ -43,6 +43,6 @@ class Solution:
         return uf.setCount - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.makeConnected(n=4, connections=[[0, 1], [0, 2], [1, 2]]))

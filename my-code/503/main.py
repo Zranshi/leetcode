@@ -15,6 +15,6 @@ class Solution:
         return ret
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     print(s.nextGreaterElements([1, 2, 1]))
