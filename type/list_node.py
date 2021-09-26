@@ -7,7 +7,7 @@ from typing import Optional
 
 
 class ListNode(object):
-    def __init__(self, val, _next: Optional["ListNode"]) -> None:
+    def __init__(self, val=0, _next: Optional["ListNode"] = None) -> None:
         self.val = val
         self.next = _next
 

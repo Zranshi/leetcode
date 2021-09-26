@@ -22,5 +22,4 @@ func reversePrint(head *ListNode) (ans []int) {
 }
 
 func main() {
-
 }
