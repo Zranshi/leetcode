@@ -12,12 +12,14 @@ class Solution:
                 if valid(a):
                     ans.append("".join(a))
             else:
-                a.append("(")
-                generate(a)
-                a.pop()
-                a.append(")")
-                generate(a)
-                a.pop()
+                _extracted_from_generate_6(a, "(")
+                _extracted_from_generate_6(a, ")")
+
+        # TODO Rename this here and in `generate`
+        def _extracted_from_generate_6(a, arg1):
+            a.append(arg1)
+            generate(a)
+            a.pop()
 
         def valid(a):
             bal = 0

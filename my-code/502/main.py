@@ -2,8 +2,6 @@
 # @Time     : 2021/09/09 18:05
 # @Author   : Ranshi
 # @File     : main.py
-
-
 import heapq
 from typing import List
 
@@ -15,7 +13,7 @@ class Solution:
         lst = [(capital[i], profits[i]) for i in range(len(capital))]
         lst.sort(key=lambda x: x[0])
         idx = 0
-        items = []
+        items: List[int] = []
         heapq.heapify(items)
         for _ in range(k):
             while idx < len(capital) and lst[idx][0] <= w:

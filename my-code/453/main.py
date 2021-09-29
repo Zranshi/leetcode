@@ -9,12 +9,9 @@ from typing import List
 class Solution:
     def minMoves(self, nums: List[int]) -> int:
         _min = nums[0]
-        res = 0
-        for i in range(len(nums)):
-            _min = min(_min, nums[i])
-        for i in range(len(nums)):
-            res += nums[i] - _min
-        return res
+        for num_ in nums:
+            _min = min(_min, num_)
+        return sum(num - _min for num in nums)
 
 
 if __name__ == "__main__":

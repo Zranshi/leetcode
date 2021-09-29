@@ -2,6 +2,8 @@
 # @Time     : 2021/05/28 18: 09
 # @Author   : Ranshi
 # @File     : 424. 替换后的最长重复字符.py
+
+
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         left, right, length, max_len = 0, 0, len(s), 0

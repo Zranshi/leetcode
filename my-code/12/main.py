@@ -20,7 +20,7 @@ class Solution:
     ]
 
     def intToRoman(self, num: int) -> str:
-        roman = list()
+        roman = []
         for value, symbol in Solution.VALUE_SYMBOLS:
             while num >= value:
                 num -= value

@@ -13,7 +13,7 @@ class ListNode(object):
 
     def __str__(self) -> str:
         res_lst = []
-        cur = self
+        cur: Optional["ListNode"] = self
         while cur:
             res_lst.append(str(cur.val))
             cur = cur.next
