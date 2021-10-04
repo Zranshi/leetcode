@@ -3,14 +3,14 @@
 # @Author   : Ranshi
 # @File     : main.py
 
-from type.listNode import ListNode
+from type.list_node import ListNode
 
 
 class Solution:
     def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
         fast = head
         slow = head
-        for i in range(k):
+        for _ in range(k):
             fast = fast.next
         while fast:
             fast = fast.next
