@@ -12,12 +12,11 @@ class Solution:
 
         nums = [-item for item in set(nums)]
         heapq.heapify(nums)
-        if len(nums) < 3:
-            return -nums[0]
-        else:
-            for i in range(2):
+        if len(nums) >= 3:
+            for _ in range(2):
                 heapq.heappop(nums)
-            return -nums[0]
+
+        return -nums[0]
 
 
 if __name__ == "__main__":

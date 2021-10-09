@@ -1,7 +1,8 @@
-# -*- coding:utf-8 -*-
-# @Time     : 2021/05/28 17: 59
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+# @Time     : 2021/10/09 12:46
 # @Author   : Ranshi
-# @File     : 110. 平衡二叉树.py
+# @File     : main.py
 from type.tree_node import TreeNode
 
 
@@ -22,3 +23,11 @@ class Solution:
                 return max(leftHeight, rightHeight) + 1
 
         return height(root) >= 0
+
+
+if __name__ == "__main__":
+    print(
+        Solution().isBalanced(
+            TreeNode.init_by_list([3, 9, 20, None, None, 15, 7])
+        )
+    )

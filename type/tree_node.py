@@ -27,33 +27,24 @@ class TreeNode(object):
             )
         return None
 
-    def string(self) -> List[str]:
-        if not self:
-            return []
-        que: List[Optional["TreeNode"]] = [self]
+    def __string(self) -> List[str]:
+        level = [self]
         res = []
-        while que:
+        while any(item is not None for item in level):
             res.append(
-                " ".join(
-                    f"{item.val:4}" if item else f"{'None':4}" for item in que
-                )
+                " ".join(f"{item.val:<4}" if item else "None" for item in level)
             )
-
-            new_que: List[Optional["TreeNode"]] = []
-            for idx in que:
-                if idx:
-                    new_que.append(idx.left)
-                    new_que.append(idx.right)
-                else:
-                    new_que.append(None)
-                    new_que.append(None)
-            if not any(new_que):
-                break
-            que = new_que
+            next_level = [None] * len(level) * 2
+            for i, item in enumerate(level):
+                next_level[i * 2] = item.left if item and item.left else None
+                next_level[i * 2 + 1] = (
+                    item.right if item and item.right else None
+                )
+            level = next_level
         return res
 
     def __str__(self) -> str:
-        return "\n".join(self.string())
+        return "\n".join(self.__string())
 
     def __repr__(self) -> str:
-        return " ".join(self.string())
+        return " ".join(self.__string())
