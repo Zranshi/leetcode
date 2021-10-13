@@ -8,13 +8,11 @@ from type.tree_node import TreeNode
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
-        return (
-            max(
-                self.maxDepth(root.left) + 1 if root.left else 1,
-                self.maxDepth(root.right) + 1 if root.right else 1,
-            )
-            if root
-            else 0
+        if not root:
+            return 0
+        return max(
+            self.maxDepth(root.left) + 1 if root.left else 1,
+            self.maxDepth(root.right) + 1 if root.right else 1,
         )
 
 

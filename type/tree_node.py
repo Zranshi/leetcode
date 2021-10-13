@@ -19,7 +19,7 @@ class TreeNode(object):
 
     @classmethod
     def init_by_list(cls, lst: list, idx: int = 0) -> Optional["TreeNode"]:
-        if idx < len(lst) and lst[idx]:
+        if idx < len(lst) and lst[idx] is not None:
             return TreeNode(
                 val=lst[idx],
                 left=TreeNode.init_by_list(lst, idx * 2 + 1),
