@@ -9,7 +9,7 @@ class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
         res, diff = float("inf"), float("inf")
-        for i in range(0, len(nums) - 2):
+        for i in range(len(nums) - 2):
             left, right = i + 1, len(nums) - 1
             while left < right:
                 total = nums[i] + nums[right] + nums[left]

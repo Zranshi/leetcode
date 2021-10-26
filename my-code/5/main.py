@@ -22,10 +22,7 @@ class Solution:
                 if s[i] != s[j]:
                     dp[i][j] = False
                 else:
-                    if j - i < 3:
-                        dp[i][j] = True
-                    else:
-                        dp[i][j] = dp[i + 1][j - 1]
+                    dp[i][j] = True if j - i < 3 else dp[i + 1][j - 1]
                 if dp[i][j] and j - i + 1 > max_len:
                     max_len = j - i + 1
                     begin = i

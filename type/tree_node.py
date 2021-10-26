@@ -5,7 +5,6 @@
 # @Doc      : TreeNode 类
 from typing import List, Optional
 
-
 class TreeNode(object):
     def __init__(
         self,

@@ -3,8 +3,9 @@
 # @Author   : Ranshi
 # @File     : main.py
 
-from type.listNode import ListNode
 from typing import Optional
+
+from pyal.container import ListNode
 
 
 class Solution:

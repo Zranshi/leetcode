@@ -25,26 +25,24 @@ class Solution:
         def helper(s1, s2, k):  # 本质上是找第k小的数
             if len(s1) < len(s2) or (len(s1) == len(s2) and s1[0] > s2[0]):
                 s1, s2 = s2, s1  # 保持nums1比较长；或者两个序列长度相等时，保持nums1[0]值最小
-            if len(s2) == 0:  # 递归返回条件之一，短序列nums2被剔空
+            if len(s2) == 0:
                 if EorO:
                     # 二序列长度之和为偶数，取nums1的第k小和k-1小数
                     return (s1[k - 1] + s1[k]) / 2.0
                 else:
                     return s1[k - 1]  # 二序列长度之和为奇数，直接返回nums1的第k小数
-            if k == 1:  # 递归返回条件之二，两个序列都有内容。二序列长度之和为偶数时，需判断很多边界条件。
-                if EorO:
-                    n1 = min(s1[0], s2[0])  # 取出最小的首元素
-                    if n1 == s1[0]:  # 如果第一个序列的首元素最小
-                        # 因为此时，二序列长度不为0，nums1至少有两个元素，nums2至少有1个元素
-                        return (n1 + min(s1[1], s2[0])) / 2.0
-                    else:  # 如果nums2[0]最小
-                        # 若nums2长度大于1，则取nums2[1]与nums1[0]的较小者与nums2[0]为所需结果
-                        if len(s2) > 1:
-                            return (n1 + min(s1[0], s2[1])) / 2.0
-                        else:  # 若nums2长度为1，则取nums1[0]与nums2[0]为结果
-                            return (n1 + s1[0]) / 2.0
-                else:  # 二序列长度之和为奇数
+            if k == 1:
+                if not EorO:
                     return min(s1[0], s2[0])  # 找最小数，比较数组首位
+                n1 = min(s1[0], s2[0])  # 取出最小的首元素
+                if n1 == s1[0]:  # 如果第一个序列的首元素最小
+                    # 因为此时，二序列长度不为0，nums1至少有两个元素，nums2至少有1个元素
+                    return (n1 + min(s1[1], s2[0])) / 2.0
+                # 若nums2长度大于1，则取nums2[1]与nums1[0]的较小者与nums2[0]为所需结果
+                if len(s2) > 1:
+                    return (n1 + min(s1[0], s2[1])) / 2.0
+                else:  # 若nums2长度为1，则取nums1[0]与nums2[0]为结果
+                    return (n1 + s1[0]) / 2.0
             t = min(k // 2, len(s2))  # 保证不上溢
             # 递归调用，即每次以新的k值和新的nums1（比较后的长序列）nums2（剔掉k/2个元素的新序列）作为递归调用参数
             if s1[t - 1] >= s2[t - 1]:

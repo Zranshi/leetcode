@@ -1,6 +1,9 @@
 package main
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 // @Time     : 2021/6/1 16:53
 // @Author   : Ranshi
@@ -32,5 +35,5 @@ func myAtoi(s string) int {
 }
 
 func main() {
-
+	fmt.Println(myAtoi("123165"))
 }
