@@ -12,9 +12,7 @@ class ListNode:
 
 
 class Solution:
-    def getIntersectionNode(
-        self, head_a: ListNode, head_b: ListNode
-    ) -> Optional[ListNode]:
+    def getIntersectionNode(self, head_a: ListNode, head_b: ListNode) -> Optional[ListNode]:
         a, b = head_a, head_b
         while a != b:
             if not a:

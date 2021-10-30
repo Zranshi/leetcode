@@ -18,8 +18,4 @@ class MedianFinder:
             heapq.heappush(self.A, -heapq.heappushpop(self.B, -num))
 
     def findMedian(self) -> float:
-        return (
-            self.A[0]
-            if len(self.A) != len(self.B)
-            else (self.A[0] - self.B[0]) / 2.0
-        )
+        return self.A[0] if len(self.A) != len(self.B) else (self.A[0] - self.B[0]) / 2.0

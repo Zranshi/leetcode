@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-    def findMaximizedCapital(
-        self, k: int, w: int, profits: List[int], capital: List[int]
-    ) -> int:
+    def findMaximizedCapital(self, k: int, w: int, profits: List[int], capital: List[int]) -> int:
         lst = [(capital[i], profits[i]) for i in range(len(capital))]
         lst.sort(key=lambda x: x[0])
         idx = 0
@@ -28,8 +26,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().findMaximizedCapital(
-            k=2, w=0, profits=[1, 2, 3], capital=[0, 1, 1]
-        )
-    )
+    print(Solution().findMaximizedCapital(k=2, w=0, profits=[1, 2, 3], capital=[0, 1, 1]))

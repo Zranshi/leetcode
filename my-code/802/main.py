@@ -24,8 +24,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().eventualSafeNodes(
-            graph=[[1, 2], [2, 3], [5], [0], [5], [], []]
-        )
-    )
+    print(Solution().eventualSafeNodes(graph=[[1, 2], [2, 3], [5], [0], [5], [], []]))

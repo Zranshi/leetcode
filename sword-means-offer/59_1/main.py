@@ -14,18 +14,14 @@ class Solution:
         n = len(nums)
         prefixMax, suffixMax = [0] * n, [0] * n
         for i in range(n):
-            prefixMax[i] = (
-                nums[i] if i % k == 0 else max(prefixMax[i - 1], nums[i])
-            )
+            prefixMax[i] = nums[i] if i % k == 0 else max(prefixMax[i - 1], nums[i])
         for i in range(n - 1, -1, -1):
             if i == n - 1 or (i + 1) % k == 0:
                 suffixMax[i] = nums[i]
             else:
                 suffixMax[i] = max(suffixMax[i + 1], nums[i])
 
-        return [
-            max(suffixMax[i], prefixMax[i + k - 1]) for i in range(n - k + 1)
-        ]
+        return [max(suffixMax[i], prefixMax[i + k - 1]) for i in range(n - k + 1)]
 
 
 if __name__ == "__main__":

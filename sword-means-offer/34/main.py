@@ -50,9 +50,7 @@ class Solution:
 if __name__ == "__main__":
     print(
         Solution().pathSum(
-            root=TreeNode.init_by_list(
-                [5, 4, 8, 11, None, 13, 4, 7, 2, None, None, 5, 1]
-            ),
+            root=TreeNode.init_by_list([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, 5, 1]),
             target=22,
         )
     )

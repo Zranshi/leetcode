@@ -25,18 +25,11 @@ class SummaryRanges:
         # 如果不存在这样的区间，interval0 为尾迭代器
         interval0 = len(intervals_) if interval1 == 0 else interval1 - 1
 
-        if (
-            interval0 != len(intervals_)
-            and keys_[interval0] <= val <= values_[interval0]
-        ):
+        if interval0 != len(intervals_) and keys_[interval0] <= val <= values_[interval0]:
             # 情况一
             return
-        left_aside = (
-            interval0 != len(intervals_) and values_[interval0] + 1 == val
-        )
-        right_aside = (
-            interval1 != len(intervals_) and keys_[interval1] - 1 == val
-        )
+        left_aside = interval0 != len(intervals_) and values_[interval0] + 1 == val
+        right_aside = interval1 != len(intervals_) and keys_[interval1] - 1 == val
         if left_aside and right_aside:
             # 情况四
             left, right = keys_[interval0], values_[interval1]

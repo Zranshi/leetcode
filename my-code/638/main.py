@@ -8,9 +8,7 @@ from functools import lru_cache
 
 
 class Solution:
-    def shoppingOffers(
-        self, price: list[int], special: list[list[int]], needs: list[int]
-    ) -> int:
+    def shoppingOffers(self, price: list[int], special: list[list[int]], needs: list[int]) -> int:
         """
         自顶向下记忆化搜索.
 
@@ -26,8 +24,7 @@ class Solution:
         filter_special = [
             sp
             for sp in special
-            if sum(sp[i] for i in range(n)) > 0
-            and sum(sp[i] * price[i] for i in range(n)) > sp[-1]
+            if sum(sp[i] for i in range(n)) > 0 and sum(sp[i] * price[i] for i in range(n)) > sp[-1]
         ]
 
         @lru_cache(None)
@@ -41,17 +38,11 @@ class Solution:
                         break
                     next_needs.append(cur_needs[i] - cur_special[i])
                 if len(next_needs) == n:
-                    min_price = min(
-                        min_price, dfs(tuple(next_needs)) + special_price
-                    )
+                    min_price = min(min_price, dfs(tuple(next_needs)) + special_price)
             return min_price
 
         return dfs(tuple(needs))
 
 
 if __name__ == "__main__":
-    print(
-        Solution().shoppingOffers(
-            price=[2, 5], special=[[3, 0, 5], [1, 2, 10]], needs=[3, 2]
-        )
-    )
+    print(Solution().shoppingOffers(price=[2, 5], special=[[3, 0, 5], [1, 2, 10]], needs=[3, 2]))

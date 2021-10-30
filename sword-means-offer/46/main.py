@@ -7,11 +7,7 @@ class Solution:
         def dfs(idx: str) -> int:
             if len(idx) in [0, 1]:
                 return 1
-            elif (
-                int(idx[0]) == 0
-                or int(idx[0]) > 2
-                or (int(idx[0]) == 2 and int(idx[1]) > 5)
-            ):
+            elif int(idx[0]) == 0 or int(idx[0]) > 2 or (int(idx[0]) == 2 and int(idx[1]) > 5):
                 return dfs(idx[1:])
             else:
                 return dfs(idx[1:]) + dfs(idx[2:])

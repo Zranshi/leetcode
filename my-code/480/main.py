@@ -22,11 +22,7 @@ class Solution:
 
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
         def median(a):
-            return (
-                a[len(a) // 2]
-                if len(a) % 2
-                else (a[len(a) // 2 - 1] + a[len(a) // 2]) / 2
-            )
+            return a[len(a) // 2] if len(a) % 2 else (a[len(a) // 2 - 1] + a[len(a) // 2]) / 2
 
         a = sorted(nums[:k])
         res = [median(a)]

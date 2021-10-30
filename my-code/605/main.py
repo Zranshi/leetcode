@@ -10,11 +10,7 @@ class Solution:
         length = len(flowerbed)
 
         def isEmpty(index: int) -> bool:
-            return (
-                True
-                if index < 0 or index >= length or flowerbed[index] == 0
-                else False
-            )
+            return True if index < 0 or index >= length or flowerbed[index] == 0 else False
 
         for i in range(length):
             if n == 0:

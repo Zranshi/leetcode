@@ -9,9 +9,7 @@ from pyal.container import ListNode
 
 
 class Solution:
-    def addTwoNumbers(
-        self, l1: Optional[ListNode], l2: Optional[ListNode]
-    ) -> ListNode:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> ListNode:
         s1 = ""
         while l1 is not None:
             s1 = s1 + str(l1.val)

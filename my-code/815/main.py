@@ -6,9 +6,7 @@ from typing import List
 
 
 class Solution:
-    def numBusesToDestination(
-        self, routes: List[List[int]], source: int, target: int
-    ) -> int:
+    def numBusesToDestination(self, routes: List[List[int]], source: int, target: int) -> int:
         from collections import deque
 
         routes = {i: set(item) for i, item in enumerate(routes)}

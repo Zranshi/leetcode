@@ -31,8 +31,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().isSymmetric(
-            TreeNode.init_by_list([1, 2, 2, None, 3, None, 3])
-        )
-    )
+    print(Solution().isSymmetric(TreeNode.init_by_list([1, 2, 2, None, 3, None, 3])))

@@ -21,11 +21,7 @@ class Solution:
                 res.append(board)
             else:
                 for i in range(n):
-                    if (
-                        i in columns
-                        or row - i in diagonal1
-                        or row + i in diagonal2
-                    ):
+                    if i in columns or row - i in diagonal1 or row + i in diagonal2:
                         continue
                     queens[row] = i
                     columns.add(i)

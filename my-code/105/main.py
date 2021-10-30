@@ -14,9 +14,7 @@ class TreeNode:
 
 
 class Solution:
-    def buildTree(
-        self, preorder: List[int], inorder: List[int]
-    ) -> Optional[TreeNode]:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         def myBuildTree(
             preorder_left: int,
             preorder_right: int,

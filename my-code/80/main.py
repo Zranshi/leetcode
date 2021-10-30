@@ -12,10 +12,7 @@ class Solution:
         if len(nums) < 3:
             return len(nums)
         for i in range(2, len(nums)):
-            if (
-                nums[i - 1 - idx] == nums[i - 2 - idx]
-                and nums[i] == nums[i - 1 - idx]
-            ):
+            if nums[i - 1 - idx] == nums[i - 2 - idx] and nums[i] == nums[i - 1 - idx]:
                 idx += 1
             else:
                 nums[i - idx] = nums[i]

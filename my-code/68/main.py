@@ -16,10 +16,7 @@ class Solution:
             left = right  # 当前行的第一个单词在 words 的位置
             sumLen = 0  # 统计这一行单词长度之和
             # 循环确定当前行可以放多少单词，注意单词之间应至少有一个空格
-            while (
-                right < n
-                and sumLen + len(words[right]) + right - left <= maxWidth
-            ):
+            while right < n and sumLen + len(words[right]) + right - left <= maxWidth:
                 sumLen += len(words[right])
                 right += 1
 
@@ -40,12 +37,8 @@ class Solution:
             # 当前行不只一个单词
             avgSpaces = numSpaces // (numWords - 1)
             extraSpaces = numSpaces % (numWords - 1)
-            s1 = blank(avgSpaces + 1).join(
-                words[left : left + extraSpaces + 1]
-            )  # 拼接额外加一个空格的单词
-            s2 = blank(avgSpaces).join(
-                words[left + extraSpaces + 1 : right]
-            )  # 拼接其余单词
+            s1 = blank(avgSpaces + 1).join(words[left : left + extraSpaces + 1])  # 拼接额外加一个空格的单词
+            s2 = blank(avgSpaces).join(words[left + extraSpaces + 1 : right])  # 拼接其余单词
             ans.append(s1 + blank(avgSpaces) + s2)
 
         return ans

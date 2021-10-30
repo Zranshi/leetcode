@@ -6,9 +6,7 @@ from typing import List
 
 
 class Solution:
-    def maxSatisfied(
-        self, customers: List[int], grumpy: List[int], X: int
-    ) -> int:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], X: int) -> int:
         diffC = [x * item for x, item in zip(customers, grumpy)]
         maxC = [sum(diffC[0:X]), 0]
         idx_sum = sum(diffC[0:X])

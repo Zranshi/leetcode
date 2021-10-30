@@ -18,8 +18,6 @@ class Solution:
         else:
             if p.val == q.val:
                 return (
-                    True
-                    and self.isSameTree(q.right, p.right)
-                    and self.isSameTree(q.left, p.left)
+                    True and self.isSameTree(q.right, p.right) and self.isSameTree(q.left, p.left)
                 )
             return False

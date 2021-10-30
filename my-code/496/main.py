@@ -5,9 +5,7 @@
 # @File     : main.py
 # @Doc      : 496. 下一个更大元素 I
 class Solution:
-    def nextGreaterElement(
-        self, nums1: list[int], nums2: list[int]
-    ) -> list[int]:
+    def nextGreaterElement(self, nums1: list[int], nums2: list[int]) -> list[int]:
         res = {}
         stack = []
         for num in reversed(nums2):

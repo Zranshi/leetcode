@@ -23,12 +23,7 @@ class Solution:
             for j in range(1, col):
                 for m in range(0, i):
                     for n in range(0, j):
-                        item = (
-                            pre_sum[i][j]
-                            + pre_sum[m][n]
-                            - pre_sum[i][n]
-                            - pre_sum[m][j]
-                        )
+                        item = pre_sum[i][j] + pre_sum[m][n] - pre_sum[i][n] - pre_sum[m][j]
                         if item <= k:
                             _max = max(_max, item)
         return _max

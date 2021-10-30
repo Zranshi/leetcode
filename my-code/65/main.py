@@ -64,9 +64,7 @@ class Solution:
                 Chartype.CHAR_NUMBER: State.STATE_FRACTION,
                 Chartype.CHAR_EXP: State.STATE_EXP,
             },
-            State.STATE_POINT_WITHOUT_INT: {
-                Chartype.CHAR_NUMBER: State.STATE_FRACTION
-            },
+            State.STATE_POINT_WITHOUT_INT: {Chartype.CHAR_NUMBER: State.STATE_FRACTION},
             State.STATE_FRACTION: {
                 Chartype.CHAR_NUMBER: State.STATE_FRACTION,
                 Chartype.CHAR_EXP: State.STATE_EXP,
@@ -75,12 +73,8 @@ class Solution:
                 Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER,
                 Chartype.CHAR_SIGN: State.STATE_EXP_SIGN,
             },
-            State.STATE_EXP_SIGN: {
-                Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER
-            },
-            State.STATE_EXP_NUMBER: {
-                Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER
-            },
+            State.STATE_EXP_SIGN: {Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER},
+            State.STATE_EXP_NUMBER: {Chartype.CHAR_NUMBER: State.STATE_EXP_NUMBER},
         }
 
         st = State.STATE_INITIAL

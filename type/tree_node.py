@@ -5,6 +5,7 @@
 # @Doc      : TreeNode 类
 from typing import List, Optional
 
+
 class TreeNode(object):
     def __init__(
         self,
@@ -30,15 +31,11 @@ class TreeNode(object):
         level = [self]
         res = []
         while any(item is not None for item in level):
-            res.append(
-                " ".join(f"{item.val:<4}" if item else "None" for item in level)
-            )
+            res.append(" ".join(f"{item.val:<4}" if item else "None" for item in level))
             next_level = [None] * len(level) * 2
             for i, item in enumerate(level):
                 next_level[i * 2] = item.left if item and item.left else None
-                next_level[i * 2 + 1] = (
-                    item.right if item and item.right else None
-                )
+                next_level[i * 2 + 1] = item.right if item and item.right else None
             level = next_level
         return res
 

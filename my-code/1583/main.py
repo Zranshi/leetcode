@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-    def unhappyFriends(
-        self, n: int, preferences: List[List[int]], pairs: List[List[int]]
-    ) -> int:
+    def unhappyFriends(self, n: int, preferences: List[List[int]], pairs: List[List[int]]) -> int:
         f_ships = [[-1] * n for _ in range(n)]
         for idx, v in enumerate(preferences):
             for i in range(len(v)):

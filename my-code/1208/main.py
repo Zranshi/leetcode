@@ -19,6 +19,4 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(
-        s.equalSubstring(s="krpgjbjjznpzdfy", t="nxargkbydxmsgby", maxCost=14)
-    )
+    print(s.equalSubstring(s="krpgjbjjznpzdfy", t="nxargkbydxmsgby", maxCost=14))

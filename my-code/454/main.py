@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-    def fourSumCount(
-        self, A: List[int], B: List[int], C: List[int], D: List[int]
-    ) -> int:
+    def fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
         res = 0
         ab_map = dict()
         for a, b in product(A, B):

@@ -11,9 +11,7 @@ class Solution:
         length_b = len(b)
         a = Counter(a)
         b = Counter(b)
-        res = min(
-            length_a - a.most_common(1)[0][1], length_b - b.most_common(1)[0][1]
-        )
+        res = min(length_a - a.most_common(1)[0][1], length_b - b.most_common(1)[0][1])
         return res
 
 

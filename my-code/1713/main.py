@@ -26,8 +26,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().minOperations(
-            target=[6, 4, 8, 1, 3, 2], arr=[4, 7, 6, 2, 3, 8, 6, 1]
-        )
-    )
+    print(Solution().minOperations(target=[6, 4, 8, 1, 3, 2], arr=[4, 7, 6, 2, 3, 8, 6, 1]))

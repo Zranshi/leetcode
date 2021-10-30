@@ -23,9 +23,7 @@ class Solution:
                     k = float("inf")
                 else:
                     # 计算斜率
-                    k = (points[j][1] - points[i][1]) / (
-                        points[j][0] - points[i][0]
-                    )
+                    k = (points[j][1] - points[i][1]) / (points[j][0] - points[i][0])
                 seen[k] += 1
             for k in seen.values():
                 res = max(res, k + 1)

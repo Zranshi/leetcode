@@ -39,9 +39,7 @@ class Solution:
             if idx_state == 123450:
                 break
             for move in self.move_map:
-                next_flag, next_state = get_next_state(
-                    idx_state, idx_flag, move
-                )
+                next_flag, next_state = get_next_state(idx_state, idx_flag, move)
                 if next_state != 0 and next_state not in path_set:
                     path_set.add(next_state)
                     dq.appendleft((next_flag, next_state, path + 1))

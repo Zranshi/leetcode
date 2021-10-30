@@ -7,9 +7,7 @@ from type.tree_node import TreeNode
 
 
 class Solution:
-    def lowestCommonAncestor(
-        self, root: TreeNode, p: TreeNode, q: TreeNode
-    ) -> TreeNode:
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
         if not root or root in (p, q):
             return root
         left = self.lowestCommonAncestor(root.left, p, q)

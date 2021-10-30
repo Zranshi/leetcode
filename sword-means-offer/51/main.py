@@ -10,9 +10,7 @@ class Solution:
             return 0
 
         mid = (left + right) // 2
-        inv_count = self.mergeSort(nums, tmp, left, mid) + self.mergeSort(
-            nums, tmp, mid + 1, right
-        )
+        inv_count = self.mergeSort(nums, tmp, left, mid) + self.mergeSort(nums, tmp, mid + 1, right)
         i, j, pos = left, mid + 1, left
         while i <= mid and j <= right:
             if nums[i] <= nums[j]:

@@ -7,9 +7,7 @@ from typing import List
 
 
 class Solution:
-    def floodFill(
-        self, image: List[List[int]], sr: int, sc: int, newColor: int
-    ) -> List[List[int]]:
+    def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
         from collections import deque
 
         row, col = len(image), len(image[0])

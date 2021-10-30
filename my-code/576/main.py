@@ -5,9 +5,7 @@
 
 
 class Solution:
-    def findPaths(
-        self, m: int, n: int, max_move: int, start_row: int, start_col: int
-    ) -> int:
+    def findPaths(self, m: int, n: int, max_move: int, start_row: int, start_col: int) -> int:
         MOD = 10 ** 9 + 7
 
         outCounts = 0

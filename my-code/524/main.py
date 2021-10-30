@@ -20,8 +20,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().findLongestWord(
-            s="abpcplea", dictionary=["ale", "apple", "monkey", "plea"]
-        )
-    )
+    print(Solution().findLongestWord(s="abpcplea", dictionary=["ale", "apple", "monkey", "plea"]))

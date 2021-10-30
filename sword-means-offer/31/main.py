@@ -8,9 +8,7 @@ from typing import List
 
 
 class Solution:
-    def validateStackSequences(
-        self, pushed: List[int], popped: List[int]
-    ) -> bool:
+    def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         stack, i = [], 0
         for num in pushed:
             stack.append(num)
@@ -21,8 +19,4 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(
-        Solution().validateStackSequences(
-            pushed=[1, 2, 3, 4, 5], popped=[4, 5, 3, 2, 1]
-        )
-    )
+    print(Solution().validateStackSequences(pushed=[1, 2, 3, 4, 5], popped=[4, 5, 3, 2, 1]))
