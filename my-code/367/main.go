@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // @Time     : 2021/5/31 14:48
 // @Author   : Ranshi
 // @File     : 367. 有效的完全平方数.go
@@ -19,4 +21,8 @@ func isPerfectSquare(num int) bool {
 		}
 	}
 	return false
+}
+
+func main() {
+	fmt.Println(isPerfectSquare(16))
 }
