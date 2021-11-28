@@ -13,7 +13,7 @@ const convert = function (s, numRows) {
   const len = Math.min(s.length, numRows),
     rows = [];
   for (let i = 0; i < len; i++) {
-    rows[i] = "";
+    rows[i] = '';
   }
   let loc = 0,
     down = false;
@@ -24,11 +24,11 @@ const convert = function (s, numRows) {
     }
     loc += down ? 1 : -1;
   }
-  let ans = "";
+  let ans = '';
   for (const row of rows) {
     ans += row;
   }
   return ans;
 };
 
-console.log(convert((s = "PAYPALISHIRING"), (numRows = 4)));
+console.log(convert((s = 'PAYPALISHIRING'), (numRows = 4)));

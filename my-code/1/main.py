@@ -2,9 +2,12 @@
 # @Time     : 2021/7/23 13: 17
 # @Author   : Ranshi
 # @File     : main.py
+from typing import Dict
+
+
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        s = {}  # 将已经读取的元素放入哈希表中, 其中目标值为key, 列表下标为val.
+        s: Dict[int, int] = {}  # 将已经读取的元素放入哈希表中, 其中目标值为key, 列表下标为val.
         for i in range(len(nums)):
             if nums[i] in s:
                 return [s[nums[i]], i]

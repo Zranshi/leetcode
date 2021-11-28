@@ -8,6 +8,7 @@ import (
 // @Time     : 2021/6/1 16:53
 // @Author   : Ranshi
 // @File     : 8. 字符串转换整数 (atoi).go
+
 func myAtoi(s string) int {
 	abs, sign, i, n := 0, 1, 0, len(s)
 	for i < n && s[i] == ' ' {
