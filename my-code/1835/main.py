@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 # @Time     : 2021/05/28 18: 24
 # @Author   : Ranshi

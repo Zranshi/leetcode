@@ -1,15 +1,14 @@
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-# @Time     : 2021/08/15 08:47
+# @Time     : 2021/12/06 20:11
 # @Author   : Ranshi
 # @File     : main.py
-
-from typing import Optional
-
+# @Doc      : 2. 两数相加
 from pyal.container import ListNode
 
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> ListNode:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         s1 = ""
         while l1 is not None:
             s1 = s1 + str(l1.val)
@@ -29,4 +28,8 @@ class Solution:
 
 
 if __name__ == "__main__":
-    ...
+    print(
+        Solution().addTwoNumbers(
+            l1=ListNode.init_by_lst([2, 4, 3]), l2=ListNode.init_by_lst([5, 6, 4])
+        )
+    )

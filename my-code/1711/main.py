@@ -22,27 +22,4 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(
-        s.countPairs(
-            deliciousness=[
-                149,
-                107,
-                1,
-                63,
-                0,
-                1,
-                6867,
-                1325,
-                5611,
-                2581,
-                39,
-                89,
-                46,
-                18,
-                12,
-                20,
-                22,
-                234,
-            ]
-        )
-    )
+    print(s.countPairs(deliciousness=[149, 107, 1, 63, 0, 1, 6867, 1325, 5611, 2581, 39, 89]))
