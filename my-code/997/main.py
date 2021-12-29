@@ -2,7 +2,6 @@
 # @Time     : 2021/08/23 09:49
 # @Author   : Ranshi
 # @File     : main.py
-
 from typing import List
 
 
@@ -26,3 +25,6 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().findJudge(n=2, trust=[[1, 2]]))
+
+test = ["Hello", "World", "FishC"]
+print(*test, sep="_")

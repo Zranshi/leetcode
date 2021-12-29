@@ -1,5 +1,10 @@
 package rs_type
 
+import (
+	"strconv"
+	"strings"
+)
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -13,4 +18,14 @@ func ListNodeInitBySlice(lst []int) *ListNode {
 		cur = cur.Next
 	}
 	return head.Next
+}
+
+func (ln *ListNode) String() string {
+	res := make([]string, 0)
+	cur := ln
+	for cur != nil {
+		res = append(res, strconv.Itoa(cur.Val))
+		cur = cur.Next
+	}
+	return strings.Join(res, " -> ")
 }
