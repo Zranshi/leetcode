@@ -8,18 +8,19 @@ import "fmt"
 
 func twoSum(ints []int, target int) []int {
 	left, right := 0, len(ints)-1
-	for left != right {
-		if ints[left]+ints[right] == target {
+	for left < right {
+		val := ints[left] + ints[right]
+		if val == target {
 			return []int{left + 1, right + 1}
-		} else if ints[left]+ints[right] < target {
-			left++
-		} else {
+		} else if val > target {
 			right--
+		} else {
+			left++
 		}
 	}
 	return nil
 }
 
 func main() {
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
+	fmt.Println(twoSum([]int{2, 3, 4}, 6))
 }

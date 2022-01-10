@@ -7,13 +7,12 @@ import "fmt"
 // @File     : main.go
 
 func twoSum(nums []int, target int) []int {
-	m := make(map[int]int)
-	for i := 0; i < len(nums); i++ {
-		another := target - nums[i]
-		if _, ok := m[another]; ok {
-			return []int{m[another], i}
+	numSet := make(map[int]int, len(nums))
+	for i, v := range nums {
+		if idx, ok := numSet[target-v]; ok {
+			return []int{idx, i}
 		}
-		m[nums[i]] = i
+		numSet[v] = i
 	}
 	return nil
 }
