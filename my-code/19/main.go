@@ -4,10 +4,12 @@ package main
 // @Author   : Ranshi
 // @File     : main.go
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import (
+	"fmt"
+	rs_type "leetcode/type"
+)
+
+type ListNode = rs_type.ListNode
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	linkHead := &ListNode{
@@ -27,4 +29,6 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return linkHead.Next
 }
 
-func main() {}
+func main() {
+	fmt.Println(removeNthFromEnd(rs_type.ListNodeInitBySlice([]int{1}), 1))
+}

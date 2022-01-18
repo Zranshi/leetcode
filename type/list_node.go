@@ -13,7 +13,7 @@ type ListNode struct {
 func ListNodeInitBySlice(lst []int) *ListNode {
 	head := &ListNode{Val: -1, Next: nil}
 	cur := head
-	for v := range lst {
+	for _, v := range lst {
 		cur.Next = &ListNode{Val: v, Next: nil}
 		cur = cur.Next
 	}
@@ -21,7 +21,7 @@ func ListNodeInitBySlice(lst []int) *ListNode {
 }
 
 func (ln *ListNode) String() string {
-	res := make([]string, 0)
+	res := []string{}
 	cur := ln
 	for cur != nil {
 		res = append(res, strconv.Itoa(cur.Val))
