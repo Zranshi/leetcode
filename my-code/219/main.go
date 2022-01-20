@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // @Time     : 2021/5/30 09:47
 // @Author   : Ranshi
 // @File     : 219. 存在重复元素 II.go
@@ -17,4 +19,8 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 		}
 	}
 	return false
+}
+
+func main() {
+	fmt.Println(containsNearbyDuplicate([]int{1, 2, 3, 1}, 3))
 }
