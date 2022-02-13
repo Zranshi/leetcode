@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/08 08:30
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 689. 三个无重迭子数组的最大和
 class Solution:
     def maxSumOfThreeSubarrays(self, nums: list[int], k: int) -> list[int]:

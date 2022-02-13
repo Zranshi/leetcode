@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/28 21:56
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 from type.tree_node import TreeNode
 
 

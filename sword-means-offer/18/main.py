@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/02 21:32
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 from type.list_node import ListNode
 
 

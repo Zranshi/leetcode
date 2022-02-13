@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/23 08:23
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 14- II. 剪绳子 II
 class Solution:
     def cuttingRope(self, n: int) -> int:

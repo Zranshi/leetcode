@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/09 09:55
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 794. 有效的井字游戏
 class Solution:
     def win(self, board: list[str], p: str) -> bool:

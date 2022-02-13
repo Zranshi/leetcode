@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/15 08:05
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 39. 数组中出现次数超过一半的数字
 from typing import List
 

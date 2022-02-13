@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/03 07:37
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def fractionToDecimal(self, numerator: int, denominator: int) -> str:
 

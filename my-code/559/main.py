@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/21 07:43
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 559. N 叉树的最大深度
 class Node(object):
     def __init__(self, val=None, children=None) -> None:

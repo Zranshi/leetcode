@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/28 21:37
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1996. 游戏中弱角色的数量
 class Solution:
     def numberOfWeakCharacters(self, properties: list[list[int]]) -> int:

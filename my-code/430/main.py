@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/24 07:37
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Node(object):
     def __init__(self, val, prev: "Node", next: "Node", child: "Node") -> None:
         self.val = val

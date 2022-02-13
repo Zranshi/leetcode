@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/10 08:44
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 495. 提莫攻击
 class Solution:
     def findPoisonedDuration(self, time_series: list[int], duration: int) -> int:

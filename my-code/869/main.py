@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/28 07:58
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 重新排序得到 2 的幂
 from typing import Tuple
 

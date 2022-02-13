@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/31 08:45
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 500. 键盘行
 class Solution:
     def findWords(self, words: list[str]) -> list[str]:

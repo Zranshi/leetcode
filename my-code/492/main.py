@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/23 08:18
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 492. 构造矩形
 import math
 

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 11:36
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 37. 序列化二叉树
 import collections
 

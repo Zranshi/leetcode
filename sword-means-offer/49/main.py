@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 11:52
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 49. 丑数
 import heapq
 

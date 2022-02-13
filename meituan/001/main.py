@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/08/25 13:45
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 
 t = int(input())
 for _ in range(t):

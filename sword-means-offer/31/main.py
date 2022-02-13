@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 09:08
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 31. 栈的压入、弹出序列
 from typing import List
 

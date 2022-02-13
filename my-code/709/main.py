@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/12 09:29
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 709. 转换成小写字母
 class Solution:
     def toLowerCase(self, s: str) -> str:

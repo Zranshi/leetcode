@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/29 12:10
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 786. 第 K 个最小的素数分数
 class Solution:
     def kthSmallestPrimeFraction(self, arr: list[int], k: int) -> list[int]:

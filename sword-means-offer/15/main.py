@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/13 09:13
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 15. 二进制中1的个数
 class Solution:
     def hammingWeight(self, n: int) -> int:

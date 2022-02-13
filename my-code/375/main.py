@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/12 07:37
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 375. 猜数字大小 II
 class Solution:
     def getMoneyAmount(self, n: int) -> int:

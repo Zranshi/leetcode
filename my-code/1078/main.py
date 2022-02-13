@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/26 18:37
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1078. Bigram 分词
 class Solution:
     def findOcurrences(self, text: str, first: str, second: str) -> list[str]:

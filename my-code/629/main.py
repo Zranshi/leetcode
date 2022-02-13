@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/11 08:04
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 629. K个逆序对数组
 class Solution:
     def kInversePairs(self, n: int, k: int) -> int:

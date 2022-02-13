@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/27 08:11
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 301. 删除无效的括号
 class Solution:
     def removeInvalidParentheses(self, s: str) -> list[str]:

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/30 08:10
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 400. 第 N 位数字
 class Solution:
     def totalDigits(self, length: int) -> int:

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/12 07:07
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         INT_MIN, INT_MAX = -(2 ** 31), 2 ** 31 - 1

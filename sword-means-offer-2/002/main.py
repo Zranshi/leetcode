@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/12 19:28
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer II 002. 二进制加法
 class Solution:
     def addBinary(self, a: str, b: str) -> str:

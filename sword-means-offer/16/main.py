@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/13 09:02
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def myPow(self, x: float, n: int) -> float:
         if x == 0:

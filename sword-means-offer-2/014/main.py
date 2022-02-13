@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/09 09:14
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer II 014. 字符串中的变位词
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:

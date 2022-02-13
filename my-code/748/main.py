@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/10 08:21
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 748. 最短补全词
 from collections import Counter
 

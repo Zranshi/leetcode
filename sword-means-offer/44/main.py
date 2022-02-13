@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/23 08:25
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 44. 数字序列中某一位的数字
 class Solution:
     def findNthDigit(self, n: int) -> int:

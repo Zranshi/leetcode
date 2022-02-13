@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time     : 2021/7/20 14: 01
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def permutation(self, chs: str):
         begin, end = 0, len(chs)

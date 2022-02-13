@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/27 08:51
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def firstUniqChar(self, s: str) -> str:
         ch_set = {}

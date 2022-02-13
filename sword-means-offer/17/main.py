@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/22 08:12
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 17. 打印从1到最大的n位数
 class Solution:
     def printNumbers(self, n: int) -> list[int]:

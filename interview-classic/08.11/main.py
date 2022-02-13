@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time     : 2021/7/21 19: 24
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def waysToChange(self, n: int) -> int:
         mod = 10 ** 9 + 7

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/27 13:35
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 2149. 按符号重排数组
 class Solution:
     def rearrangeArray(self, nums: list[int]) -> list[int]:

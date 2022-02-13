@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/13 09:47
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 520. 检测大写字母
 class Solution:
     def detectCapitalUse(self, word: str) -> bool:

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/22 09:17
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 384. 打乱数组
 import random
 

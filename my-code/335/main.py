@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/29 09:58
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 335. 路径交叉
 class Solution:
     def isSelfCrossing(self, distance: list[int]) -> bool:

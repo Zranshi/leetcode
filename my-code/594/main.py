@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/20 08:25
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 594. 最长和谐子序列
 class Solution:
     def findLHS(self, nums: list[int]) -> int:

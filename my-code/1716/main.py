@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/15 08:42
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1716. 计算力扣银行的钱
 class Solution:
     def totalMoney(self, n: int) -> int:

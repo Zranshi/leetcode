@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/08 15:57
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 299. 猜数字游戏
 class Solution:
     def getHint(self, secret: str, guess: str) -> str:

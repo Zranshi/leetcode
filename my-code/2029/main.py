@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/20 09:50
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 2029. 石子游戏 IX
 class Solution:
     def stoneGameIX(self, stones: list[int]) -> bool:

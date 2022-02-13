@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/12 21:06
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1920. 基于排列构建数组
 class Solution:
     def buildArray(self, nums: list[int]) -> list[int]:

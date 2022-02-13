@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/17 08:25
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 318. 最大单词长度乘积
 from collections import defaultdict
 from functools import reduce

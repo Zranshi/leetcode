@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 09:33
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 67. 把字符串转换成整数
 class Solution:
     def strToInt(self, str: str) -> int:

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/27 12:19
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 2148. 元素计数
 class Solution:
     def countElements(self, nums: list[int]) -> int:

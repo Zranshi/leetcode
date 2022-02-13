@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/25 08:15
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 458. 可怜的小猪
 class Solution:
     def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/22 08:21
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 51. 数组中的逆序对
 class Solution:
     def mergeSort(self, nums, tmp, left, right):

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/04 13:01
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def reverseWords(self, s: str) -> str:
         return " ".join(s.strip().split()[::-1])

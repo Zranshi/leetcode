@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/11 08:55
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def sumNums(self, n: int) -> int:
         return n and self.sumNums(n - 1) + n

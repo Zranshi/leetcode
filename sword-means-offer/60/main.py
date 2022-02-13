@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 11:54
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 60. n个骰子的点数
 class Solution:
     def dicesProbability(self, n: int) -> list[float]:

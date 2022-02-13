@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/07 08:46
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1614. 括号的最大嵌套深度
 class Solution:
     def maxDepth(self, s: str) -> int:

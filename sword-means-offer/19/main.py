@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/21 11:51
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 19. 正则表达式匹配
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:

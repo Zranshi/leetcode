@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/30 07:04
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 260. 只出现一次的数字 III
 class Solution:
     def singleNumber(self, nums: list[int]) -> list[int]:

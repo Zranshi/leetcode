@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/29 22:57
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 面试题 10.10. 数字流的秩
 class StreamRank:
     def __init__(self):

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/25 07:45
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def reverseLeftWords(self, s: str, n: int) -> str:
         return (s + s[:n])[n:]

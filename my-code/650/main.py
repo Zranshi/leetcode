@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/21 20:02
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def _minSteps(self, n: int) -> int:
         """

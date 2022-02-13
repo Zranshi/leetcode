@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/15 10:08
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 319. 灯泡开关
 from math import sqrt
 

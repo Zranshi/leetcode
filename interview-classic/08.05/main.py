@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time     : 2021/7/20 09: 51
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def multiply(self, a: int, b: int) -> int:
         if b == 1:

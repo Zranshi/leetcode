@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/14 10:30
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 5926. 买票需要的时间
 from collections import deque
 

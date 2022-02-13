@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time     : 2021/7/3 23: 25
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class TreeNode:
     def __init__(self, val, left=None, right=None):
         self.val = val

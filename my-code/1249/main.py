@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/08/18 12:42
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         indexes_to_remove = set()

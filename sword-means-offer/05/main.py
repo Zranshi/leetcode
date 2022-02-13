@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/25 07:42
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def replaceSpace(self, s: str) -> str:
         return s.replace(" ", "%20")

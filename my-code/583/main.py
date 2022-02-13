@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/25 06:59
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
         len1, len2 = len(word1), len(word2)

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/27 00:00
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def numDecodings(self, s: str) -> int:
         MOD = 10 ** 9 + 7

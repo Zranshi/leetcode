@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/11 07:28
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 singles = [
     "",
     "One",

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/20 23:21
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 剑指 Offer 62. 圆圈中最后剩下的数字
 class Solution:
     def lastRemaining(self, n: int, m: int) -> int:

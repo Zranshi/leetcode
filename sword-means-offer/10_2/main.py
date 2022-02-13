@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/29 19:01
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class Solution:
     def numWays(self, n: int) -> int:
         if n in {0, 1}:

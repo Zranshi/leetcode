@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/02 09:09
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 506. 相对名次
 class Solution:
     def findRelativeRanks(self, score: list[int]) -> list[str]:

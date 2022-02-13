@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/12/06 09:02
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 1816. 截断句子
 class Solution:
     def truncateSentence(self, s: str, k: int) -> str:

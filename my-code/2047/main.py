@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2022/01/27 00:10
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 2047. 句子中的有效单词数
 class Solution:
     def countValidWords(self, sentence: str) -> int:

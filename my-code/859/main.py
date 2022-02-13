@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/23 08:14
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 859. 亲密字符串
 class Solution:
     def buddyStrings(self, s: str, goal: str) -> bool:

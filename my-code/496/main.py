@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/10/26 08:00
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 496. 下一个更大元素 I
 class Solution:
     def nextGreaterElement(self, nums1: list[int], nums2: list[int]) -> list[int]:

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/24 08:11
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 423. 从英文中重建数字
 from collections import Counter
 

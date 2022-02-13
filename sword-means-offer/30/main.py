@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/09/23 08:27
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class MinStack:
     def __init__(self):
         self._main_stk = []

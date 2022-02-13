@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # @Time     : 2021/11/14 11:26
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 # @Doc      : 5928. 解码斜向换位密码
 class Solution:
     def decodeCiphertext(self, encodedText: str, rows: int) -> str:

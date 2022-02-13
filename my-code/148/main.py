@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time     : 2021/7/4 17: 14
 # @Author   : Ranshi
-# @File     : main.py
+# @File     : 123.py
 class ListNode:
     def __init__(self, val=0, _next=None):
         self.val = val
