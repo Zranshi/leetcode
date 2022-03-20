@@ -3,13 +3,13 @@
 # @Author   : Ranshi
 # @File     : 6. Z 字形变换.py
 class Solution:
-    def convert(self, string: str, num_rows: int) -> str:
+    def convert(self, s: str, num_rows: int) -> str:
         if num_rows == 1:
-            return string
-        _map = [[] for _ in range(num_rows)]
+            return s
+        path = [[] for _ in range(num_rows)]
         idx, mode = 0, 1
-        for item in string:
-            _map[idx].append(item)
+        for item in s:
+            path[idx].append(item)
             if mode == 1 and idx == num_rows - 1:
                 mode = 2
             elif mode == 2 and idx == 0:
@@ -18,12 +18,8 @@ class Solution:
                 idx += 1
             else:
                 idx -= 1
-        res = []
-        for item in _map:
-            res.extend(item)
-        return "".join(res)
+        return "".join("".join(item) for item in path)
 
 
 if __name__ == "__main__":
-    s = Solution()
-    print(s.convert("ABC", 1))
+    print(Solution().convert(s="PAYPALISHIRING", num_rows=3))
