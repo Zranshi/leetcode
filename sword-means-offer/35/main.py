@@ -14,7 +14,7 @@ class Node(ListNode):
         _next: Optional["ListNode"] = None,
         random: Optional["Node"] = None,
     ) -> None:
-        super().__init__(val=val, next=_next)
+        super().__init__(val=val, next_=_next)
         self.random = random
 
 

@@ -7,7 +7,7 @@ from type.list_node import ListNode
 
 class Solution:
     def deleteNode(self, head: ListNode, val: int) -> ListNode:
-        new_head = ListNode(0, next=head)
+        new_head = ListNode(0, next_=head)
         cur: "ListNode" = new_head
         while cur and cur.next:
             if cur.next.val == val:

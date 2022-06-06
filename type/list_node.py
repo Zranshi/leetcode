@@ -7,9 +7,9 @@ from typing import Optional
 
 
 class ListNode(object):
-    def __init__(self, val=0, next: Optional["ListNode"] = None) -> None:
+    def __init__(self, val=0, next_: Optional["ListNode"] = None) -> None:
         self.val = val
-        self.next = next
+        self.next = next_
 
     def __str__(self) -> str:
         res_lst = []
@@ -21,9 +21,9 @@ class ListNode(object):
 
     @classmethod
     def init_by_lst(cls, lst: list) -> Optional["ListNode"]:
-        head = ListNode(val=-1, next=None)
+        head = ListNode(val=-1, next_=None)
         cur = head
         for v in lst:
-            cur.next = ListNode(val=v, next=None)
+            cur.next = ListNode(val=v, next_=None)
             cur = cur.next
         return head.next
