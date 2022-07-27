@@ -3,7 +3,6 @@
     "*.cjson": "jsonc",
     "*.wxs": "javascript",
     "*.wxss": "css",
-    "iosfwd": "cpp",
-    "iostream": "cpp"
+    "ostream": "cpp"
   }
 }
