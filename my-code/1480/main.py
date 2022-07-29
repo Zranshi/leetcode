@@ -3,15 +3,12 @@
 # @Author   : Ranshi
 # @File     : 123.py
 
-from typing import List
-
 
 class Solution:
-    def runningSum(self, nums: List[int]) -> List[int]:
-        res = nums[:]
-        for i in range(1, len(res)):
-            res[i] += res[i - 1]
-        return res
+    def runningSum(self, nums: list[int]) -> list[int]:
+        for i in range(1, len(nums)):
+            nums[i] += nums[i - 1]
+        return nums
 
 
 if __name__ == "__main__":

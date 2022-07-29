@@ -11,8 +11,6 @@ class Solution:
         sumAll = sum(nums)
         sumHalf = 0
         for i in range(n):
-            if i == 0:
-                sumHalf = 0
             if sumHalf * 2 + nums[i] == sumAll:
                 return i
             sumHalf += nums[i]
