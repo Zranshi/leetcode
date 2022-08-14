@@ -3,11 +3,9 @@
 # @Author   : Ranshi
 # @File     : 123.py
 
-from typing import List
-
 
 class Solution:
-    def updateMatrix(self, matrix: List[List[int]]) -> List[List[int]]:
+    def updateMatrix(self, matrix: list[list[int]]) -> list[list[int]]:
         from collections import deque
 
         m, n = len(matrix), len(matrix[0])
