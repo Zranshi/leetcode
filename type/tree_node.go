@@ -11,15 +11,20 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func TreeNodeInitBySlice(lst []int, idx int) *TreeNode {
-	if idx < len(lst) && lst[idx] != 0 {
-		return &TreeNode{
-			Val:   lst[idx],
-			Left:  TreeNodeInitBySlice(lst, idx*2+1),
-			Right: TreeNodeInitBySlice(lst, idx*2+2),
+func TreeNodeInitBySlice(lst []int) *TreeNode {
+	idx := 0
+	var recFun func([]int, int) *TreeNode
+	recFun = func(lst []int, idx int) *TreeNode {
+		if idx < len(lst) && lst[idx] != 0 {
+			return &TreeNode{
+				Val:   lst[idx],
+				Left:  recFun(lst, idx*2+1),
+				Right: recFun(lst, idx*2+2),
+			}
 		}
+		return nil
 	}
-	return nil
+	return recFun(lst, idx)
 }
 
 func (tn *TreeNode) String() string {
