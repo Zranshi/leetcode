@@ -5,7 +5,7 @@ import "fmt"
 // @Time     : 2022/08/18 10:14
 // @Author   : Ranshi
 // @File     : main.go
-// @Doc      : 1224. 最大相等频率
+// @Doc      : 1224. 最大相等频率   
 
 func maxEqualFreq(nums []int) (ans int) {
 	freq := map[int]int{}
