@@ -21,7 +21,7 @@ class Solution:
         if all(ch_count1[i] == ch_count2[i] for i in range(26)):
             res.append(0)
 
-        for left in range(0, len2 - len1):
+        for left in range(len2 - len1):
             ch_count2[ord(s[left]) - 97] -= 1
             ch_count2[ord(s[left + len1]) - 97] += 1
             if all(ch_count1[i] == ch_count2[i] for i in range(26)):

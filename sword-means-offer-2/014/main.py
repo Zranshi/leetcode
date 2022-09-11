@@ -10,23 +10,16 @@ class Solution:
             return False
         ch_count1 = [0] * 26
         ch_count2 = [0] * 26
-
         for ch in s1:
             ch_count1[ord(ch) - 97] += 1
-
         for i in range(len1):
             ch_count2[ord(s2[i]) - 97] += 1
-
-        for left in range(0, len2 - len1):
+        for left in range(len2 - len1):
             if all(ch_count1[i] == ch_count2[i] for i in range(26)):
                 return True
             ch_count2[ord(s2[left]) - 97] -= 1
             ch_count2[ord(s2[left + len1]) - 97] += 1
-        else:
-            if all(ch_count1[i] == ch_count2[i] for i in range(26)):
-                return True
-
-        return False
+        return all(ch_count1[i] == ch_count2[i] for i in range(26))
 
 
 if __name__ == "__main__":
