@@ -8,8 +8,8 @@ for _ in range(t):
     usr = input()
     if not usr[0].isalpha() or not usr.isalnum():
         print("Wrong")
+    elif usr.isalpha() or usr.isdigit():
+        print("Wrong")
+
     else:
-        if not usr.isalpha() and not usr.isdigit():
-            print("Accept")
-        else:
-            print("Wrong")
+        print("Accept")
