@@ -13,7 +13,7 @@ import (
 type TreeNode = rs_type.TreeNode
 
 func increasingBST(root *TreeNode) *TreeNode {
-	nodes := []*TreeNode{}
+	var nodes []*TreeNode
 	var dfs func(*TreeNode)
 	dfs = func(tn *TreeNode) {
 		if tn.Left != nil {
@@ -35,6 +35,5 @@ func increasingBST(root *TreeNode) *TreeNode {
 }
 
 func main() {
-	// fmt.Println(increasingBST(rs_type.TreeNodeInitBySlice([]int{5, 3, 6, 2, 4, 0, 8, 1, 0, 0, 0, 7, 9})))
-	fmt.Println(rs_type.TreeNodeInitBySlice([]int{1, 2, 3, 4, 0, 6, 7, 8, 9, 10}))
+	fmt.Println(increasingBST(rs_type.TreeNodeInitBySlice([]int{5, 3, 6, 2, 4, 0, 8, 1, 0, 0, 0, 7, 9})))
 }

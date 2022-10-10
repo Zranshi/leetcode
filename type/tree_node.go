@@ -1,7 +1,7 @@
 package rs_type
 
 import (
-	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -28,26 +28,28 @@ func TreeNodeInitBySlice(lst []int) *TreeNode {
 }
 
 func (tn *TreeNode) String() string {
-	res := []string{}
+	if tn == nil {
+		return ""
+	}
+	var res []string
 	level := []*TreeNode{tn}
 	flag := true
 	for flag {
 		flag = false
-		levelRes := make([]string, len(level))
-		nextLevel := make([]*TreeNode, len(level)*2)
-		for i, v := range level {
-			if v != nil {
-				flag = true
-				levelRes[i] = fmt.Sprintf(" %5v ", v.Val)
-				nextLevel[i*2] = v.Left
-				nextLevel[i*2+1] = v.Right
+		var nextLevel []*TreeNode
+		var idxStr []string
+		for _, node := range level {
+			if node == nil {
+				idxStr = append(idxStr, "nil")
 			} else {
-				levelRes[i] = " nil "
-				nextLevel[i*2] = nil
-				nextLevel[i*2+1] = nil
+				flag = true
+				idxStr = append(idxStr, strconv.Itoa(node.Val))
+				nextLevel = append(nextLevel, node.Left)
+				nextLevel = append(nextLevel, node.Right)
 			}
 		}
-		res = append(res, strings.Join(levelRes, " "))
+		res = append(res, strings.Join(idxStr, " "))
+		level = nextLevel
 	}
-	return strings.Join(res, "\n")
+	return strings.Join(res[:len(res)-1], "\n")
 }

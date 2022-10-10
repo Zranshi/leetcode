@@ -6,7 +6,7 @@
 # @Doc      : 剑指 Offer II 001. 整数除法
 class Solution:
     def divide(self, a: int, b: int) -> int:
-        INT_MIN, INT_MAX = -(2 ** 31), 2 ** 31 - 1
+        INT_MIN, INT_MAX = -(2**31), 2**31 - 1
 
         # 当被除数为最小值时, 除以-1可能会导致溢出
         if a == INT_MIN:

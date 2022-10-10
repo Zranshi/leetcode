@@ -32,7 +32,7 @@ public:
       while (z) {
         if (z & 1) {
           if (result < x - add) {
-            return false;
+            return false; 
           }
           result += add;
         }

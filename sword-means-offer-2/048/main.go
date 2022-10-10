@@ -14,68 +14,42 @@ import (
 
 type TreeNode = rs_type.TreeNode
 
-type Codec struct {
+type Codec struct{}
+
+func Constructor() (_ Codec) {
+	return
 }
 
-func Constructor() Codec {
-	return Codec{}
-}
-
-// Serializes a tree to a single string.
-func (cc *Codec) serialize(root *TreeNode) string {
-	if root == nil {
-		return ""
-	}
-	level := []*TreeNode{root}
-	levelVal := []string{}
-	for {
-		nextLevel := []*TreeNode{}
-		flag := false
-		tmp := []string{}
-		for _, node := range level {
-			if node == nil {
-				nextLevel = append(nextLevel, nil)
-				nextLevel = append(nextLevel, nil)
-				tmp = append(tmp, "-")
-			} else {
-				flag = true
-				nextLevel = append(nextLevel, node.Left)
-				nextLevel = append(nextLevel, node.Right)
-				tmp = append(tmp, strconv.Itoa(node.Val))
-			}
+func (Codec) serialize(root *TreeNode) string {
+	sb := &strings.Builder{}
+	var dfs func(*TreeNode)
+	dfs = func(node *TreeNode) {
+		if node == nil {
+			sb.WriteString("null,")
+			return
 		}
-		if !flag {
-			break
-		}
-		level = nextLevel
-		levelVal = append(levelVal, tmp...)
+		sb.WriteString(strconv.Itoa(node.Val))
+		sb.WriteByte(',')
+		dfs(node.Left)
+		dfs(node.Right)
 	}
-	return strings.Join(levelVal, " ")
+	dfs(root)
+	return sb.String()
 }
 
-// Deserializes your encoded data to tree.
-func (cc *Codec) deserialize(data string) *TreeNode {
-	if data == "" {
-		return nil
-	}
-	vals := strings.Split(data, " ")
-	fmt.Println(vals)
-	var genTree func(int) *TreeNode
-
-	genTree = func(i int) *TreeNode {
-		fmt.Println(i)
-		if i >= len(vals) || vals[i] == "-" {
+func (Codec) deserialize(data string) *TreeNode {
+	sp := strings.Split(data, ",")
+	var build func() *TreeNode
+	build = func() *TreeNode {
+		if sp[0] == "null" {
+			sp = sp[1:]
 			return nil
 		}
-		val, _ := strconv.Atoi(vals[i])
-		return &TreeNode{
-			Val:   val,
-			Left:  genTree(i*2 + 1),
-			Right: genTree(i*2 + 2),
-		}
+		val, _ := strconv.Atoi(sp[0])
+		sp = sp[1:]
+		return &TreeNode{Val: val, Left: build(), Right: build()}
 	}
-
-	return genTree(0)
+	return build()
 }
 
 func main() {
