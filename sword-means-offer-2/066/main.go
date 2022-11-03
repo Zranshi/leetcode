@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // @Time     : 2022/10/22 17:46
 // @Author   : Ranshi
 // @File     : main.go
@@ -49,12 +47,4 @@ func (ms *MapSum) Sum(prefix string) (ans int) {
         stk = stk[1:]
     }
     return
-}
-
-
-func main() {
-    ms := Constructor()
-    ms.Insert("apple", 3)
-    ms.root.Val = 1
-    fmt.Println(ms.root.Val)
 }
