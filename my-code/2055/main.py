@@ -4,7 +4,9 @@
 # @File     : main.py
 # @Doc      : 2055. 蜡烛之间的盘子
 class Solution:
-    def platesBetweenCandles(self, s: str, queries: list[list[int]]) -> list[int]:
+    def platesBetweenCandles(
+        self, s: str, queries: list[list[int]]
+    ) -> list[int]:
         n = len(s)
         preSum, sum = [0] * n, 0
         left, idx = [0] * n, -1
@@ -25,13 +27,14 @@ class Solution:
         ans = [0] * len(queries)
         for i, (x, y) in enumerate(queries):
             x, y = right[x], left[y]
-            if x >= 0 and y >= 0 and x < y:
+            if 0 <= x < y and y >= 0:
                 ans[i] = preSum[y] - preSum[x]
         return ans
 
 
 print(
     Solution().platesBetweenCandles(
-        s="***|**|*****|**||**|*", queries=[[1, 17], [4, 5], [14, 17], [5, 11], [15, 16]]
+        s="***|**|*****|**||**|*",
+        queries=[[1, 17], [4, 5], [14, 17], [5, 11], [15, 16]],
     )
 )
