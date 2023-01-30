@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	rs_type "leetcode/type"
+	rstype "leetcode/type"
 )
 
 // @Time     : 2022/12/05 18:41
@@ -10,7 +10,7 @@ import (
 // @File     : main.go
 // @Doc      : 剑指 Offer II 077. 链表排序
 
-type ListNode = rs_type.ListNode
+type ListNode = rstype.ListNode
 
 func merge(head1, head2 *ListNode) *ListNode {
 	dummyHead := &ListNode{}
@@ -58,5 +58,5 @@ func sortList(head *ListNode) *ListNode {
 }
 
 func main() {
-	fmt.Println(sortList(rs_type.ListNodeInitBySlice([]int{4, 2, 1, 3})))
+	fmt.Println(sortList(rstype.ListNodeInitBySlice([]int{4, 2, 1, 3})))
 }

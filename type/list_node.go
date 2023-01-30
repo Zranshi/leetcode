@@ -1,4 +1,4 @@
-package rs_type
+package rstype
 
 import (
 	"strconv"
