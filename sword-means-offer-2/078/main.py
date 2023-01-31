@@ -13,6 +13,7 @@ class Solution:
         if len(lists) == 0:
             return None
         elif len(lists) == 1:
+
             return lists[0]
         elif len(lists) == 2:
             return self.merge(lists[0], lists[1])
