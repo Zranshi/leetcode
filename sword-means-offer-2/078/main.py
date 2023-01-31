@@ -8,31 +8,33 @@ from typing import List
 from type.list_node import ListNode
 
 
-# class Solution:
-#     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
-#         if len(lists) == 0:
-#             return None
-#         dummy_head = ListNode()
-#         p = dummy_head
-#         while True:
-#             _min = 0
-#             for i in range(0, len(lists)):
-#                 if lists[_min] is None or (
-#                     lists[i] is not None and lists[_min].val > lists[i].val
-#                 ):
-#                     _min = i
-#             if lists[_min] is None:
-#                 break
-#             p.next = lists[_min]
-#             lists[_min].next, lists[_min] = None, lists[_min].next
-#             p = p.next
-#         print(dummy_head)
-#         return dummy_head.next
-
-
 class Solution:
-    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
-        ...
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode | None:
+        if len(lists) == 0:
+            return None
+        elif len(lists) == 1:
+            return lists[0]
+        elif len(lists) == 2:
+            return self.merge(lists[0], lists[1])
+        return self.merge(
+            self.mergeKLists(lists[: len(lists) // 2]),
+            self.mergeKLists(lists[len(lists) // 2:]),
+        )
+
+    def merge(self, l1: ListNode, l2: ListNode):
+        dummy_head = ListNode()
+        p = dummy_head
+        while l1 and l2:
+            if l1.val < l2.val:
+                l1, p.next = l1.next, l1
+            else:
+                l2, p.next = l2.next, l2
+            p = p.next
+        if l1:
+            p.next = l1
+        elif l2:
+            p.next = l2
+        return dummy_head.next
 
 
 if __name__ == "__main__":
